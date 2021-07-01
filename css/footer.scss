@@ -1,0 +1,111 @@
+footer {
+  background: #274D44;
+  color: #FDF5E6;
+  position: relative;
+  z-index: 200;
+  a {
+    color: #FDF5E6;
+    text-transform: uppercase;
+    &:hover {
+      color: #FDF5E6;
+    }
+  }
+  p {
+    text-transform: uppercase;
+    line-height: 1.6;
+    a {
+      letter-spacing: 0;
+      transition: all .3s;
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+  .small {
+    line-height: 1;
+    letter-spacing: 0;
+    vertical-align: text-bottom;
+    display: inline-block;
+    font-size: .86vw;
+  }
+  
+}
+
+footer hr {
+  border-top: 3px solid #FDF5E6;
+}
+
+footer .slick-next {
+  background-image: url(../media/arrow-right-w.svg) !important;
+  
+}
+footer .slick-prev {
+  background-image: url(../media/arrow-left-w.svg) !important;
+}
+
+
+.social {
+  padding-top: 2vw;
+  a {
+    margin: 0 .15vw;
+  }
+  img {
+    height: 2.5vw;
+    width: auto;
+  }
+}
+
+footer input {
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid #FDF5E6;
+  color: #FDF5E6;
+  padding: 10px 0;
+  width: 100%;
+  text-transform: uppercase;
+  &::placeholder {
+    color: rgba(253, 245, 230, 0.5);
+   
+  }
+}
+
+.sonara-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sonara-logo img {
+  height: 1.7vw;
+  display: block;
+}
+
+.logo-lumber img {
+  height: 5vw;
+  width: auto;;
+}
+
+
+
+
+.inst-slider {
+  .slick-arrow {
+    top: -5.4vw;
+  } 
+  img {
+    padding-right: 3%;
+  }
+  .slick-list {
+    padding-left: 0 !important;
+  }
+}
+
+
+
+.footer {
+  p {
+    
+  }
+}
+
+
+
+

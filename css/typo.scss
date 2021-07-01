@@ -1,0 +1,169 @@
+
+@font-face {
+    font-family: 'Bowlby One SC';
+    src: url('../fonts/BowlbyOne-Regular.woff2') format('woff2'),
+        url('../fonts/BowlbyOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+//@font-face {
+//    font-family: 'HK Concentrate';
+//    src: url('../fonts/HKConcentrate-Regular.woff2') format('woff2'),
+//        url('../fonts/HKConcentrate-Regular.woff') format('woff');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: swap;
+//}
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('../fonts/HKGrotesk-SemiBold.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HK Grotesk Bold';
+    src: url('../fonts/HKGrotesk-Bold.woff2') format('woff2'),
+        url('../fonts/HKGrotesk-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+.bold {
+  font-family: 'Bowlby One SC';
+}
+.lite {
+  font-family: 'HK Grotesk';
+}
+.lite-bold {
+  font-family: 'HK Grotesk Bold';
+}
+
+
+
+
+body {
+  font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+  font-family: 'HK Grotesk';
+  
+}
+
+
+
+
+
+.container {
+  max-width: 90%;
+}
+
+
+
+
+
+
+
+h1, h2 {
+  font-size: 3.2vw;
+  text-transform: uppercase;
+  font-family: 'Bowlby One SC';
+  margin-bottom: 1vw;
+  letter-spacing: .15vw;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.9vw;
+  font-family: 'Bowlby One SC';
+}
+
+h4 {font-size: 1.563vw;}
+
+h5 {font-size: 1.25vw;}
+
+small, .small {font-size: .9vw;}
+.smalls {
+  font-size: .86vw;
+}
+a, button {
+  font-family: 'Bowlby One SC';
+  font-size: 1.148vw; 
+  letter-spacing: .03vw;
+  
+}
+p, input, li {
+  font-size: 1.21vw;
+  line-height: 1.3;
+}
+
+.h1 {
+  font-family: 'Bowlby One SC';
+  font-size: 3.7vw;
+  margin-bottom: 1vw;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+.link {
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -.2vh;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #274D44;
+    
+  }
+  &:hover {
+    &:after {
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: link;
+        animation-name: link;
+      }
+    }
+}
+
+
+@-webkit-keyframes link {
+  0% {
+    width: 0;
+  }
+  
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes link {
+  0% {
+    width: 0;
+  }
+  
+  100% {
+    width: 100%;
+  }
+}
+
+

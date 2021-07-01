@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Bowlby One SC';
+    src: url('BowlbyOneSC-Regular.woff2') format('woff2'),
+        url('BowlbyOneSC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HK Concentrate';
+    src: url('HKConcentrate-Regular.woff2') format('woff2'),
+        url('HKConcentrate-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
