@@ -6787,6 +6787,10 @@ section.explore .container {
   background: #FDF5E6;
   padding-left: 2vw;
   padding-right: 2vw; }
+  @media (max-width: 575.98px) {
+    .rooms-hero {
+      width: 100%;
+      position: relative; } }
   .rooms-hero ul {
     padding: 0;
     margin: 0;
@@ -6827,7 +6831,9 @@ section.explore .container {
 #map-canvas {
   height: 90vh;
   width: 50%; }
-
+  @media (max-width: 575.98px) {
+    #map-canvas {
+      width: 100%; } }
 .marker-link {
   font-family: 'HK Grotesk';
   font-size: 1vw;
@@ -6859,7 +6865,10 @@ section.explore .container {
   width: 50%;
   border-left: 3px solid #274D44;
   height: 100%; }
-
+  @media (max-width: 575.98px) {
+    .map-nav {
+      position: relative;
+      width: 100%; } }
 .accordion-container .js-accordion-title {
   height: 10vh;
   border-top: 3px solid;
@@ -7040,7 +7049,9 @@ section.explore .container {
     border: 3px solid #274D44;
     z-index: -2;
     background: #FDF5E6; }
-
+  @media (max-width: 575.98px) {
+    .content-bordered .bord {
+      display: none; } }
 .contact-form input, .contact-form textarea {
   width: 100%;
   background: transparent;
@@ -7068,6 +7079,11 @@ section.explore .container {
     background: #274D44;
     color: #fff; }
 
+.contact-form .bord {
+  display: none; }
+  @media (max-width: 575.98px) {
+    .contact-form .bord {
+      display: block; } }
 .text-input {
   position: relative; }
 

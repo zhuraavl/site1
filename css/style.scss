@@ -599,6 +599,10 @@ section.explore {
   background: #FDF5E6;
   padding-left: 2vw;
   padding-right: 2vw;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    position: relative;
+  }
   ul {
     padding: 0;
     margin: 0;
@@ -653,6 +657,9 @@ section.explore {
 #map-canvas {
   height: 90vh;
   width: 50%;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
 }
 
 
@@ -694,7 +701,10 @@ section.explore {
   width: 50%;
   border-left: 3px solid #274D44;
   height: 100%;
-  
+  @include media-breakpoint-down(xs) {
+    position: relative;
+    width: 100%;
+  }
 }
 
 
@@ -924,6 +934,11 @@ section.explore {
     z-index: -2;
     background: #FDF5E6;
   }
+  .bord {
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
 }
 
 .contact-form {
@@ -954,6 +969,12 @@ section.explore {
     &:hover {
       background: #274D44;
       color: #fff;
+    }
+  }
+  .bord {
+    display: none;
+    @include media-breakpoint-down(xs) {
+      display: block;
     }
   }
 }
