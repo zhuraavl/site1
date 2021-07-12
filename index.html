@@ -10,11 +10,12 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css">
     <script>document.documentElement.className = 'js';</script>
   </head>
   <body class="home">
     <header id="header">
-      <div class="menu">
+      <div class="menu-icon">
         <button class="open-menu"><span style="letter-spacing: .1vw; padding-left: .05vw;">M</span><span>E</span><br><span style="letter-spacing: .2vw; padding-left: .05vw;">N</span><span>U</span></button>
       </div>
       <div class="logo"><a href="/"><img src="media/logo-green.svg"></a></div>
@@ -37,7 +38,7 @@
           <li><a href="locations.html">
                Groups & events <img class="link-arrow" src="media/arrow-link.svg"></a></li>
           <li><a href="contact.html">Contact us</a></li>
-          <li class="mt-5"><a class="book" href="index"> <img src="media/book.svg">book now</a></li>
+          <li class="mt-3 mt-sm-5"><a class="book-now-button" href="index"> <img src="media/book.svg">book now</a></li>
         </ul>
         <div class="bottom-info"><img class="menu-logo" src="media/menu-logo.svg">
           <p class="my-3 lite-bold text-uppercase">128 S Green St, Sonora, CA 95370<br>+1 209-536-4694<br>hello@lumberjack.com</p>
@@ -97,17 +98,17 @@
         -->
       </section>
       <section class="hello">
-        <div class="container pb-5">
+        <div class="container pb-sm-5">
           <div class="row pt-5">
-            <div class="col-12 text-center pt-5 pr-5"><img class="d-none d-sm-block" src="media/hello-scene-1.svg" style="width: 30%; margin:auto; margin-right: 3.5vw;"></div>
+            <div class="col-12 text-center px-0 pt-3 pt-sm-5 pr-sm-5 pl-sm-3"><img class="d-sm-none" src="media/main-mobil-1.svg" style="width: 100%; margin: auto;"><img class="d-none d-sm-block" src="media/hello-scene-1.svg" style="width: 30%; margin:auto; margin-right: 3.5vw;"></div>
           </div>
           <div class="row pt-4">
             <div class="col-12 col-md-6 px-5">
               <div class="pr-4 pl-5"><img class="d-none d-sm-block" src="media/hello-scene-2.svg"></div>
             </div>
             <div class="col-12 col-md-6 pt-4">
-              <h2>hello stranger</h2>
-              <p>Hotel Lumberjack is proudly located at the center of historic Sonora, California. Our hotel is a newly envisaged Americana Motel experience. We’re in the heart of the Gold Country, close to curated boutiques and fantastic dining. You’ll also be able to walk along Dragoon Gulch Trail or take a drive to Yosemite National Park. Or take advantage of abundant outdoor recreational activities, from boating to hiking all nearby. If you’re more in the mood for a relaxing time, visit local wineries and breweries with family and friends. </p>
+              <h2 class="pr-5 pr-sm-0">hello stranger</h2>
+              <p class="mb-1 mb-sm-3">Hotel Lumberjack is proudly located at the center of historic Sonora, California. Our hotel is a newly envisaged Americana Motel experience. We’re in the heart of the Gold Country, close to curated boutiques and fantastic dining. You’ll also be able to walk along Dragoon Gulch Trail or take a drive to Yosemite National Park. Or take advantage of abundant outdoor recreational activities, from boating to hiking all nearby. If you’re more in the mood for a relaxing time, visit local wineries and breweries with family and friends. </p>
               <p class="small font-italic">Additionally, all of our rooms have been thoughtfully designed with working niches, oversized beds and large walk-in showers with eco-friendly amenities throughout. At Hotel Lumberjack we love living at the intersection of nature and design and we can’t wait to welcome you!</p><a class="link" href="about.html">more about hotel</a>
               <div class="row">
                 <div class="col-12 text-right pr-5"><img src="media/hello-scene-3.svg" style="width: 20%; display:inline-block"></div>
@@ -118,17 +119,20 @@
       </section>
       <section>
         <div class="container">
-          <div class="row pt-5">
+          <div class="row pt-3 pt-sm-5">
             <div class="col-12">
               <hr>
               <h2 class="pb-2"> Meet our rooms</h2>
               <div class="home-rooms-slider">
-                <div class="item"><a href="products.html/#ada-room"><img src="media/room1.jpg">
-                    <p class="bold">ADA ROOM</p></a></div>
-                <div class="item"><a href="products.html/#ada-room"><img src="media/room2.jpg">
-                    <p class="bold">double queen room</p></a></div>
-                <div class="item"><a href="products.html/#ada-room"><img src="media/room3.jpg">
-                    <p class="bold">double queen room</p></a></div>
+                <div class="item"><img src="media/room1.jpg" data-caption="ADA ROOM"><img src="https://images.unsplash.com/photo-1622495805440-0075dfea3318?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="ADA ROOM"><img src="https://images.unsplash.com/photo-1625921765718-40e14ee8641c?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="ADA ROOM"><img src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="ADA ROOM">
+                  <p class="bold">ADA ROOM</p>
+                </div>
+                <div class="item"><img src="media/room2.jpg" data-caption="double queen room"><img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="double queen room">
+                  <p class="bold">double queen room</p>
+                </div>
+                <div class="item"><img src="media/room3.jpg" data-caption="double queen"><img src="https://unsplash.com/photos/67IqLbpNiRI" data-caption="double queen">
+                  <p class="bold">double queen room</p>
+                </div>
               </div>
             </div>
           </div>
@@ -136,24 +140,24 @@
         <div class="py-5"></div>
       </section>
       <section class="explore">
-        <div class="py-5"></div>
+        <div class="py-sm-5"></div>
         <div class="container">
-          <div class="row p-5">
-            <div class="col-12 col-sm-6 pb-4 pt-4 pr-5"><img src="media/explore-scene-1.svg"></div>
-            <div class="col-12 col-sm-6 pt-5 pr-5">
+          <div class="row p-sm-5">
+            <div class="col-12 col-sm-6 pb-4 pt-4 pr-sm-5"><img class="d-sm-none" src="media/main-mobil-2.svg" style="width: 100%; margin: auto;"><img class="d-none d-sm-block" src="media/explore-scene-1.svg"></div>
+            <div class="col-12 col-sm-6 pt-sm-5 pr-sm-5">
               <h2>Explore Historic Sonora and Our Surroundings</h2>
               <p>Whether you are a history buff, a fan of everything outdoors, a gambler, a shopping fiend, or someone that has to do and see it all, Sonora is the perfect place for you. Our local area of downtown Sonora, offers a vibrant local community with arts, shopping, dining, history, and nature, and on top of all that, we are a short drive from Yosemite, one of the most beautiful national parks in the country.</p><a class="link" href="test">Learn more</a>
             </div>
           </div>
         </div>
-        <div class="py-5"></div>
-        <div class="pb-3"></div>
+        <div class="py-sm-5"></div>
+        <div class="pb-sm-3"></div>
       </section>
       <section class="main-quote">
         <div class="container pt-5">
           <div class="row justify-content-center pt-5">
-            <div class="col-9">
-              <div class="slider-quote">
+            <div class="col-12 col-sm-9">
+              <div class="slider-quote pl-5 pl-sm-0">
                 <div class="item">
                   <h2>There are several downtown hotels such as the Sonora Inn and Gunn House, from which guests can easily walk to restaurants and shops.</h2>
                 </div>
@@ -161,14 +165,14 @@
                   <h2>Whether you are a history buff, a fan of everything outdoors, a gambling man (or woman!), a shopping fiend, or someone </h2>
                 </div>
               </div>
-              <div class="py-1"></div>
+              <div class="py-sm-1"></div>
               <hr>
-              <div class="py-2"></div>
+              <div class="py-sm-2"></div>
               <div class="slider-quote-footer">
-                <div class="item"><img src="media/Los_Angeles_Times_logo.svg" style="width: 36%;">
+                <div class="item"><img class="quote-logo-one" src="media/Los_Angeles_Times_logo.svg">
                   <p class="text-uppercase pt-2 small lite-bold">– los angeles times, april 12, 2018</p>
                 </div>
-                <div class="item"><img src="media/Los_Angeles_Times_logo.svg" style="width: 36%;">
+                <div class="item"><img class="quote-logo-one" src="media/Los_Angeles_Times_logo.svg">
                   <p class="text-uppercase pt-2 small lite-bold">– another slide text description</p>
                 </div>
               </div>
@@ -181,7 +185,7 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-12 pt-5 pb-5">
+            <div class="col-12 py-2 py-sm-5">
               <hr>
               <h2 class="pb-3">follow me</h2>
               <div class="inst-slider">
@@ -192,42 +196,52 @@
               </div>
             </div>
           </div>
-          <div class="row mt-2">
-            <div class="col-9 menu-links"><a href="rooms.html">Rooms •  </a><a href="about.html"> about hotel • </a><a href="locations.html">explore sonora • </a><a href="locations.html">events</a></div>
-            <div class="col-3 text-right"><a href="">book a room</a></div>
+          <div class="row mt-2 d-none d-sm-flex">
+            <div class="col-sm-9 menu-links"><a href="rooms.html">Rooms •  </a><a href="about.html"> about hotel • </a><a href="locations.html">locations  • </a><a href="locations.html">groups & events • </a><a href="contact.html">contact us</a></div>
+            <div class="col-sm-3 text-right"><a href="">book a room</a></div>
           </div>
           <hr class="mt-2">
           <div class="row mb-3 mt-4 pt-1">
-            <div class="col-2 pr-0"><a class="logo-lumber" href=""><img src="media/lumberjack-logo-footer.svg"></a></div>
-            <div class="col-3 adress">
-              <p class="m-0 lite-bold"><a class="lite-bold" href="">128 S Green St, Sonora, CA 95370</a><br>+1 209-536-4694<br><a class="lite-bold" href="">hello@lumberjack.com</a></p>
+            <div class="col-6 col-sm-2 pr-sm-0"><a class="logo-lumber" href=""><img src="media/lumberjack-logo-footer.svg"></a></div>
+            <div class="col-6 col-sm-2 social text-right pl-sm-0 order-sm-4"><a href=""><img src="media/ta.svg"></a><a href=""><img src="media/ig.svg"></a><a href=""><img src="media/tw.svg"></a><a href=""><img src="media/fb.svg"></a></div>
+            <div class="col-12 col-sm-3 adress">
+              <p class="m-0 lite-bold pt-4 pt-sm-0 pb-5 pb-sm-0"><a class="lite-bold" href="">128 S Green St, Sonora, CA 95370</a><br>+1 209-536-4694<br><a class="lite-bold" href="">hello@lumberjack.com</a></p>
             </div>
-            <div class="col-5 px-5">
-              <div class="px-5">
-                <div class="pl-3">
+            <div class="col-12 col-sm-5 px-sm-5">
+              <div class="px-sm-5">
+                <div class="pl-sm-3">
                   <p class="m-0 lite-bold">Sign up for updates:</p>
                   <input type="email" placeholder="your e-mail">
                 </div>
               </div>
             </div>
-            <div class="col-2 social text-right pl-0"><a href=""><img src="media/ta.svg"></a><a href=""><img src="media/ig.svg"></a><a href=""><img src="media/tw.svg"></a><a href=""><img src="media/fb.svg"></a></div>
           </div>
           <div class="row pt-3">
             <div class="col-12 text-center">
-              <p class="small m-0 text-uppercase" style="vertical-align: bottom;">Hotel-companion of</p>
+              <p class="small m-0 text-uppercase mobil-small-text" style="vertical-align: bottom;">Hotel-companion of</p>
             </div>
           </div>
-          <div class="row align-items-end pb-4">
+          <div class="row align-items-end pb-4 d-none d-sm-flex">
             <div class="col">
               <p class="small m-0 text-uppercase">© 2021 hotel lumberjack. All Rights Reserved</p>
             </div>
             <div class="col text-center"><a class="sonara-logo" href=""><img src="media/logo-sonora.svg"></a></div>
             <div class="col text-right"><a class="lite small pr-3 text-uppercase" href="privacy.html">Privacy policy</a><a class="lite small text-uppercase" href="">Accessibility</a></div>
           </div>
+          <div class="row align-items-end pb-4 d-sm-none">
+            <div class="col-3 pr-0"><a class="lite small text-uppercase mobil-small-text" href="privacy.html">Privacy policy</a></div>
+            <div class="col-6 text-center"><a class="sonara-logo" href=""><img src="media/logo-sonora.svg"></a></div>
+            <div class="col-3 pl-0 text-right"><a class="lite small text-uppercase mobil-small-text" href="">Accessibility</a></div>
+          </div>
         </div>
       </footer>
-      <script type="text/javascript">
-        (function () {
+    </main>
+    <script src="js/jquery.min.js">     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      (function () {
         var params = {"propertyId":"754508"};
         var paramsArr = [];
         var pl2 = document.createElement("script");
@@ -239,33 +253,17 @@
         btoa(paramsArr.join("&"));
         (document.getElementsByTagName("head")[0] ||
         document.getElementsByTagName("body")[0]).appendChild(pl2);
-        })();
-        
-             
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </script>
-    </main>
-    <script src="js/jquery.min.js">     </script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
+      })();
+      jQuery(document).ready(function ($) {
+        $('.home-rooms-slider').slickLightbox({
+          src: 'src',
+          itemSelector: 'img',
+          caption: 'caption',
+          imageMaxHeight: '.7',
+          captionPosition: 'dynamic',
+          background: '#274D44'
+        });
+      });
+    </script>
   </body>
 </html>

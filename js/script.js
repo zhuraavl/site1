@@ -127,6 +127,14 @@ jQuery(document).ready(function ($) {
   });
   
   
+  
+  
+  $(".amenities-button").click(function () {
+    $(this).toggleClass('open');
+    $(this).next().slideToggle();
+  });
+  
+  
   // show / hide header after scroll
   //  $(function(){
   //    var lastScrollTop = 0, delta = 5;
@@ -194,6 +202,8 @@ jQuery(document).ready(function ($) {
   });
   
   
+  
+  
   $('.slider-quote').slick({
     speed: 1000,
     autoplay: true,
@@ -225,7 +235,15 @@ jQuery(document).ready(function ($) {
     cssEase: 'ease-in-out',
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true
+    arrows: true,
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
   });
   
    $('.features-slider').slick({
@@ -235,7 +253,15 @@ jQuery(document).ready(function ($) {
     cssEase: 'ease-in-out',
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true
+    arrows: true,
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   });
   
   

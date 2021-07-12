@@ -39,8 +39,21 @@ section {
 }
 
 
+.container {
+  max-width: 90%;
+  @include media-breakpoint-down(xs) {
+    max-width: 100%;
+  }
+}
+
+
+
+
 hr {
-  border-top: .2vw solid $dark-green;
+  border-top: 3px solid $dark-green;
+  @include media-breakpoint-down(xs) {
+    border-top: 1.5px solid $dark-green;
+  }
 }
 
 main {
@@ -48,94 +61,10 @@ main {
 }
 
 
-#header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-}
-.check {
-  position: absolute;
-  width: 3.3vw;
-  top: 2.7vw;
-  right: 1.3vw;
-  z-index: 10;
-  cursor: pointer;
-  svg {
-    width: 100%;
-  }
-  svg path {
-    fill: #274D44;
-  }
-  .hover-line {
-    opacity: 0;
-  }
-  &:hover {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: wobble;
-    animation-name: wobble;
-    .hover-line {
-      fill: #FDF5E6;
-      opacity: 1;
-    }
-  }
-}
-.logo {
-  position: absolute;
-  width: 11vw;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 1.5vw;
-  
-}
-.menu {
-  position: absolute;
-  top: 2vw;
-  left: 1.3vw;
-  z-index: 10;
-  button {
-    background: transparent;
-    font-size: 1.4vw;
-    color: #274D44;
-    border: 0;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-}
 
 
-.home {
-  .logo {
-    opacity: 0;
 
-  }
-  .open-menu {
-    color: #FDF5E6;
-  }
-  .check {
-    svg path {
-      fill: #FDF5E6 !important;
-    }
-  }
-}
-.change-color {
-  .logo {
-    opacity: 1;
-  }
-  .open-menu {
-    color: #274D44 !important;
-  }
-  .check {
-    svg path {
-      fill: #274D44 !important;
-    }
-  }
-}
+
 
 
 
@@ -373,7 +302,6 @@ a {
     padding-left: 0 !important;
   }
   .item {
-    
     outline: none !important;
     &:focus, &:hover {
       outline: none !important;
@@ -385,12 +313,28 @@ a {
     width: auto;
     padding-bottom: 1.2vw;
     padding-right: 2vw;
+    display: none;
+    @include media-breakpoint-down(xs) {
+      max-width: 93.5vw;
+      height: auto;
+      padding-right: 1vw;
+    }
+    &:first-child{
+      display: block;
+    }
   }
   p.bold {
     font-size: 1.2vw;
     text-transform: uppercase;
     
   }
+  .slick-arrow {
+    bottom: -30px; 
+  }
+  .gallery-img {
+    display: none;
+  }
+  
 }
 
 
@@ -409,6 +353,10 @@ a {
   border: 0;
   z-index: 20;
   outline: none;
+  @include media-breakpoint-down(xs) {
+    width: 26px;
+    height: 26px;
+  }
   &:hover, &:active, &:focus {
     cursor: pointer;
     outline: none;
@@ -449,16 +397,49 @@ a {
 .slick-arrow {
   top: -4.9vw;
   right: 0;
+  @include media-breakpoint-down(xs) {
+    bottom: -50px;
+    top: auto;
+    left: 0;
+    margin: auto;
+  }
 }
 .slick-prev {
   right: 5.5vw;
+  @include media-breakpoint-down(xs) {
+    right: 50px !important;
+  }
 }
-
+.slick-next {
+  @include media-breakpoint-down(xs) {
+    left: 50px;
+  }
+}
 
 .slick-list {
   margin-right: -6.8%;
 }
+.slick-lightbox {
+  .slick-list {
+    margin-right: 0 !important;
+  }
+}
 
+
+.slick-lightbox-slick-item {
+  position: relative;
+}
+.slick-lightbox-slick-caption {
+  position: absolute;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  top: 30px;
+  text-transform: uppercase; 
+  font-family: 'Bowlby One SC';
+}
 
 
 // explore block
@@ -478,6 +459,9 @@ section.explore {
       height: 98%;
       border: 3px solid $dark-green; 
       z-index: -1;
+      @include media-breakpoint-down(xs) {
+        border: 0;
+      }
     }
     &:before {
       content: '';
@@ -491,6 +475,9 @@ section.explore {
       height: 95.6%;
       border: 3px solid $dark-green; 
       z-index: -1;
+      @include media-breakpoint-down(xs) {
+        border: 0;
+      }
     }
   }
 }
@@ -514,8 +501,27 @@ section.explore {
     font-size: 5vw;
     z-index: 10;
     font-family: 'Bowlby One SC';
+    @include media-breakpoint-down(xs) {
+      font-size: 40px;
+      left: 5%;
+      top: -9%;
+    }
+  }
+  h2 {
+    @include media-breakpoint-down(xs) {
+      font-size: 23px;
+    }
   }
 }
+
+.quote-logo-one {
+  width: 36%;
+  @include media-breakpoint-down(xs) {
+      width: 70%;
+    }
+}
+
+
 
 .slider-quote .slick-list {
   margin: 0;
@@ -533,6 +539,9 @@ section.explore {
   .slick-arrow {
     top: 0%;
     right: 0;
+    @include media-breakpoint-down(xs) {
+      bottom: -125px;
+    }
   }
   .slick-prev {
     right: 5vw;
@@ -600,13 +609,24 @@ section.explore {
   padding-left: 2vw;
   padding-right: 2vw;
   @include media-breakpoint-down(xs) {
-    width: 100%;
+    width: 95%;
     position: relative;
+    margin: .7em auto;
+    min-height: auto;
+    height: auto;
+    border: 1.5px solid #274D44;
+    padding-bottom: 90px !important;
   }
+  
   ul {
     padding: 0;
     margin: 0;
     line-height: 1.3;
+    @include media-breakpoint-down(xs) {
+      display: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
     li {
       width: 49%;
       display: inline-block;
@@ -615,6 +635,26 @@ section.explore {
   }
   
 }
+.amenities-button {
+  text-transform: uppercase;
+  cursor: pointer;
+  span {
+    display: none;
+    &:first-child {
+      display: inline-block;
+    }
+  }
+  &.open {
+    span:first-child {
+      display: none;
+    }
+    span:nth-child(2){
+      display: inline-block !important;
+    }
+  }
+}
+
+
 .book-button {
   position: absolute;
   bottom: 0;
@@ -625,9 +665,13 @@ section.explore {
   padding: 2.25vh 0 2vh;
   font-size: 1.5vw;
   text-transform: uppercase;
+  @include media-breakpoint-down(xs) {
+    font-size: 23px; 
+    border-top: 1.5px solid #274D44;
+  }
   &:hover {
     background: #274D44;
-    color: #fff;
+    color: #FDF5E6;
   }
 }
 
@@ -648,6 +692,9 @@ section.explore {
     height: 80vh;
     width: auto;
     padding-right: 2vw;
+    @include media-breakpoint-down(xs) {
+      height: 200px;
+    }
   }
   
 }
@@ -669,6 +716,10 @@ section.explore {
   text-transform: uppercase;
   margin-bottom: 1vw;
   display: block;
+  @include media-breakpoint-down(xs) {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
   &.active {
     
     padding-left:0;
@@ -681,6 +732,11 @@ section.explore {
       display: inline-block;
       margin-right: 1.45vw;
       vertical-align: baseline;
+      @include media-breakpoint-down(xs) {
+        width: 13px;
+        height: 13px;
+        margin-right: 23px;
+      }
     }
   }
   
@@ -691,6 +747,9 @@ section.explore {
 .map-container {
   position: relative;
   border: 3px solid #274D44;
+  @include media-breakpoint-down(xs) {
+    border: 0;
+  }
 }
 .map-nav {
   position: absolute;
@@ -704,6 +763,8 @@ section.explore {
   @include media-breakpoint-down(xs) {
     position: relative;
     width: 100%;
+    border: 1.5px solid #274D44;
+    margin-bottom: 25px;
   }
 }
 
@@ -712,13 +773,26 @@ section.explore {
   
   
   .js-accordion-title {
-    height: 10vh;
     border-top: 3px solid;
     margin-bottom: 0;
-    padding: 2vw 1.7vw;
+    padding: 3.3vh 1.5vw;
     font-size: 1.6vw; 
     transition: all .3s;
     position: relative;
+    height: 10vh;
+    
+    @include media-breakpoint-down(xs) {
+      border-top: 1.5px solid;
+      font-size: 23px;
+      padding: 24px 14px 20px;
+      height: auto;
+    }
+    &.accordion-first-title {
+      padding: 3.7vh 1.5vw;
+      @include media-breakpoint-down(xs) {
+        padding: 24px 14px 22px;
+      }
+    }
     &:after {
       content: '';
       position: absolute;
@@ -729,6 +803,11 @@ section.explore {
       height: .35vw;
       background: #274D44;
       margin: auto;
+      @include media-breakpoint-down(xs) {
+        width: 13px;
+        height: 3px;
+        right: 15px;
+      }
     }
     &:before {
       content: '';
@@ -740,6 +819,11 @@ section.explore {
       height: 1.05vw;
       background: #274D44;
       margin: auto;
+      @include media-breakpoint-down(xs) {
+        width: 3px;
+        height: 13px;
+        right: 20px;
+      }
     }
     &:first-child {
       border-top: 0;
@@ -750,6 +834,11 @@ section.explore {
     border-bottom: 0;
     font-size: 3.1vw; 
     padding: 1.25vw 1.7vw;
+    @include media-breakpoint-down(xs) {
+      font-size: 31px;
+      padding: 25px 15px;
+      padding-right: 40px;
+    }
     &:before {
       display: none;
     }
@@ -759,6 +848,9 @@ section.explore {
     height: 60vh;
     overflow-y: scroll;
     padding: 1.5vh 1.7vw;
+    @include media-breakpoint-down(xs) {
+      padding: 0 14px;
+    }
   }
   .open + .accordion-content {
    
@@ -867,6 +959,9 @@ section.explore {
 .bordered {
   border: 3px solid #274D44;
   position: relative;
+  @include media-breakpoint-down(xs) {
+    border: 1.5px solid #243
+  }
   &:after {
     content: '';
     position: absolute;
@@ -875,30 +970,58 @@ section.explore {
     top: -15px;
     left: -15px;
     border: 3px solid #274D44;
+    @include media-breakpoint-down(xs) {
+      border: 1.5px solid #274D44;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+    }
   }
 }
 
 
 .features-slider {
+  &:after {
+    @include media-breakpoint-down(xs) {
+      content: '';
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      border-bottom: 1.5px solid #274D44;
+    }
+  }
+  
   .box {
     padding: .7vw;
+    @include media-breakpoint-down(xs) {
+      padding: 0;
+    }
   }
   .slick-arrow {
     top: -2.5vw;
+    @include media-breakpoint-down(xs) {
+      bottom: -60px;
+      top: auto;
+    }
   }
   .slick-list {
     margin: 0 -.7vw;
   }
+  
 }
 
 
 
 
 .content-bordered {
-  
   position: relative;
   background: #FDF5E6;
   z-index: 10;
+  @include media-breakpoint-down(xs) {
+    max-width: 90%;
+  }
   .row {
     z-index: 20;
     position: relative;
@@ -912,6 +1035,9 @@ section.explore {
     background: #FDF5E6;
     z-index: 1;
     border: 3px solid #274D44;
+    @include media-breakpoint-down(xs) {
+      border: 1.5px solid #274D44;
+    }
   }
   .border-first {
     position: absolute;
@@ -922,6 +1048,11 @@ section.explore {
     border: 3px solid #274D44;
     z-index: -1;
     background: #FDF5E6;
+    @include media-breakpoint-down(xs) {
+      border: 1.5px solid #274D44;
+      top: 5px;
+      right: -5px;
+    }
     
   }
   .border-second {
@@ -933,10 +1064,15 @@ section.explore {
     border: 3px solid #274D44;
     z-index: -2;
     background: #FDF5E6;
+    @include media-breakpoint-down(xs) {
+      border: 1.5px solid #274D44;
+      top: 10px;
+      right: -10px;
+    }
   }
   .bord {
     @include media-breakpoint-down(xs) {
-      display: none;
+     z-index: -10;
     }
   }
 }
@@ -953,6 +1089,9 @@ section.explore {
     outline: none;
     color: #274D44;
     margin: 3vh 0;
+    @include media-breakpoint-down(xs) {
+      font-size: 23px;
+    }
   }
   textarea {
     height: 6vh;
@@ -968,7 +1107,7 @@ section.explore {
     cursor: pointer;
     &:hover {
       background: #274D44;
-      color: #fff;
+      color: #FDF5E6;
     }
   }
   .bord {
@@ -995,6 +1134,9 @@ section.explore {
   color: rgba(39, 77, 68, 0.5);
   transition: .2s ease-out all;
   pointer-events: none;
+  @include media-breakpoint-down(xs)  {
+    font-size: 23px;
+  }
 }
 .text-input input:focus {
   border-bottom: 2px solid #274D44;
@@ -1005,6 +1147,9 @@ section.explore {
   left: 0;
   
   color: #274D44;
+  @include media-breakpoint-down(xs)  {
+    font-size: 15px;
+  }
 }
 .text-input.toptop {
   label {

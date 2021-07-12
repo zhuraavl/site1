@@ -16,6 +16,9 @@ footer {
     a {
       letter-spacing: 0;
       transition: all .3s;
+      @include media-breakpoint-down(xs) {
+        font-size: 15px;
+      }
       &:hover {
         opacity: .5;
       }
@@ -33,7 +36,18 @@ footer {
 
 footer hr {
   border-top: 3px solid #FDF5E6;
+  @include media-breakpoint-down(xs) {
+    border-top: 1.5px solid #FDF5E6;
+  }
 }
+
+
+footer .slick-slider {
+  @include media-breakpoint-down(xs) {
+    margin-bottom: 80px;
+  }
+}
+
 
 footer .slick-next {
   background-image: url(../media/arrow-right-w.svg) !important;
@@ -42,16 +56,30 @@ footer .slick-next {
 footer .slick-prev {
   background-image: url(../media/arrow-left-w.svg) !important;
 }
-
+footer .slick-arrow {
+  @include media-breakpoint-down(xs) {
+    bottom: -60px;
+    top: auto !important; 
+  }
+}
 
 .social {
   padding-top: 2vw;
+  @include media-breakpoint-down(xs) {
+    padding-top: 0;
+  }
   a {
     margin: 0 .15vw;
+    @include media-breakpoint-down(xs) {
+      margin: 0 2.5px;
+    }
   }
   img {
     height: 2.5vw;
     width: auto;
+    @include media-breakpoint-down(xs) {
+      height: 31px
+    }
   }
 }
 
@@ -63,6 +91,12 @@ footer input {
   padding: 10px 0;
   width: 100%;
   text-transform: uppercase;
+  @include media-breakpoint-down(xs) {
+    width: 75%;
+    border-bottom: 1.5px solid #FDF5E6;
+    padding-top: 5px;
+    outline: none;
+  }
   &::placeholder {
     color: rgba(253, 245, 230, 0.5);
    
@@ -76,11 +110,18 @@ footer input {
 .sonara-logo img {
   height: 1.7vw;
   display: block;
+  @include media-breakpoint-down(xs) {
+    height: 18px;
+  }
 }
 
 .logo-lumber img {
   height: 5vw;
-  width: auto;;
+  width: auto;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -99,13 +140,8 @@ footer input {
 }
 
 
-
-.footer {
-  p {
-    
+.mobil-small-text {
+  @include media-breakpoint-down(xs) {
+    font-size: 10px !important;
   }
 }
-
-
-
-

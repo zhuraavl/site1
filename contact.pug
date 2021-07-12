@@ -25,13 +25,17 @@ html(lang='en')
       
       
       section.my-5.py-5
-        .container.content-bordered.my-5.py-5
+        .container
+          .row
+            .col-12
+              h2.d-sm-none Have a question? fill out the form and we will answer you shortly
+        .container.content-bordered.my-sm-5.py-sm-5
           .bord.box-bg
           .bord.border-first
           .bord.border-second
           .row.pt-5.pb-4.justify-content-center
             .col-12.col-sm-10
-              h2.pr-5 Have a question? fill out the form and we will answer you shortly
+              h2.pr-5.d-none.d-sm-block Have a question? fill out the form and we will answer you shortly
               
               .contact-form
                 .bord.box-bg
@@ -43,11 +47,11 @@ html(lang='en')
                       input(type="text" required)
                       label Name
                 .row
-                  .col-6
+                  .col-12.col-sm-6
                     .text-input
                       input(type="email" required)
                       label Email
-                  .col-6
+                  .col-12.col-sm-6
                     .text-input
                       input(type="number" required)
                       label Phone number

@@ -1,7 +1,7 @@
 footer
   .container
     .row
-      .col-12.pt-5.pb-5
+      .col-12.py-2.py-sm-5
         hr
         h2.pb-3 follow me
         .inst-slider
@@ -18,13 +18,14 @@ footer
             a(href="products.html/#ada-room")
               img(src="media/inst-4.jpg")
 
-    .row.mt-2
-      .col-9.menu-links
+    .row.mt-2.d-none.d-sm-flex
+      .col-sm-9.menu-links
         a(href="rooms.html") Rooms •  
         a(href="about.html")  about hotel • 
-        a(href="locations.html") explore sonora • 
-        a(href="locations.html") events
-      .col-3.text-right
+        a(href="locations.html") locations  • 
+        a(href="locations.html") groups & events • 
+        a(href="contact.html") contact us
+      .col-sm-3.text-right
         a(href="") book a room
 
     
@@ -32,23 +33,11 @@ footer
     hr.mt-2
 
     .row.mb-3.mt-4.pt-1
-      .col-2.pr-0
+      .col-6.col-sm-2.pr-sm-0
         a.logo-lumber(href="")
           img(src="media/lumberjack-logo-footer.svg")
-      .col-3.adress
-        p.m-0.lite-bold
-          a.lite-bold(href="") 128 S Green St, Sonora, CA 95370
-          br
-          | +1 209-536-4694
-          br
-          a.lite-bold(href="") hello@lumberjack.com
-
-      .col-5.px-5
-        .px-5
-          .pl-3
-            p.m-0.lite-bold Sign up for updates:
-            input(type="email" placeholder="your e-mail")
-      .col-2.social.text-right.pl-0
+      .col-6.col-sm-2.social.text-right.pl-sm-0.order-sm-4
+      
         a(href="")
           img(src="media/ta.svg")
         a(href="")
@@ -57,10 +46,24 @@ footer
           img(src="media/tw.svg")
         a(href="")
           img(src="media/fb.svg")
+      .col-12.col-sm-3.adress
+        p.m-0.lite-bold.pt-4.pt-sm-0.pb-5.pb-sm-0
+          a.lite-bold(href="") 128 S Green St, Sonora, CA 95370
+          br
+          | +1 209-536-4694
+          br
+          a.lite-bold(href="") hello@lumberjack.com
+
+      .col-12.col-sm-5.px-sm-5
+        .px-sm-5
+          .pl-sm-3
+            p.m-0.lite-bold Sign up for updates:
+            input(type="email" placeholder="your e-mail")
+      
     .row.pt-3
       .col-12.text-center
-        p.small.m-0.text-uppercase(style="vertical-align: bottom;") Hotel-companion of
-    .row.align-items-end.pb-4
+        p.small.m-0.text-uppercase.mobil-small-text(style="vertical-align: bottom;") Hotel-companion of
+    .row.align-items-end.pb-4.d-none.d-sm-flex
       .col
         p.small.m-0.text-uppercase © 2021 hotel lumberjack. All Rights Reserved
       .col.text-center
@@ -69,6 +72,17 @@ footer
       .col.text-right
         a.lite.small.pr-3.text-uppercase(href="privacy.html") Privacy policy
         a.lite.small.text-uppercase(href="") Accessibility
+        
+    .row.align-items-end.pb-4.d-sm-none
+      .col-3.pr-0
+        a.lite.small.text-uppercase.mobil-small-text(href="privacy.html") Privacy policy
+      .col-6.text-center
+        a.sonara-logo(href="")
+          img(src="media/logo-sonora.svg")
+      .col-3.pl-0.text-right
+        a.lite.small.text-uppercase.mobil-small-text(href="") Accessibility
+      
+        
         
         
         

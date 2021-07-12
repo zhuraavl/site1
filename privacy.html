@@ -14,7 +14,7 @@
   </head>
   <body>
     <header id="header">
-      <div class="menu">
+      <div class="menu-icon">
         <button class="open-menu"><span style="letter-spacing: .1vw; padding-left: .05vw;">M</span><span>E</span><br><span style="letter-spacing: .2vw; padding-left: .05vw;">N</span><span>U</span></button>
       </div>
       <div class="logo"><a href="/"><img src="media/logo-green.svg"></a></div>
@@ -37,7 +37,7 @@
           <li><a href="locations.html">
                Groups & events <img class="link-arrow" src="media/arrow-link.svg"></a></li>
           <li><a href="contact.html">Contact us</a></li>
-          <li class="mt-5"><a class="book" href="index"> <img src="media/book.svg">book now</a></li>
+          <li class="mt-3 mt-sm-5"><a class="book-now-button" href="index"> <img src="media/book.svg">book now</a></li>
         </ul>
         <div class="bottom-info"><img class="menu-logo" src="media/menu-logo.svg">
           <p class="my-3 lite-bold text-uppercase">128 S Green St, Sonora, CA 95370<br>+1 209-536-4694<br>hello@lumberjack.com</p>
@@ -63,7 +63,7 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-12 pt-5 pb-5">
+            <div class="col-12 py-2 py-sm-5">
               <hr>
               <h2 class="pb-3">follow me</h2>
               <div class="inst-slider">
@@ -74,37 +74,42 @@
               </div>
             </div>
           </div>
-          <div class="row mt-2">
-            <div class="col-9 menu-links"><a href="rooms.html">Rooms •  </a><a href="about.html"> about hotel • </a><a href="locations.html">explore sonora • </a><a href="locations.html">events</a></div>
-            <div class="col-3 text-right"><a href="">book a room</a></div>
+          <div class="row mt-2 d-none d-sm-flex">
+            <div class="col-sm-9 menu-links"><a href="rooms.html">Rooms •  </a><a href="about.html"> about hotel • </a><a href="locations.html">locations  • </a><a href="locations.html">groups & events • </a><a href="contact.html">contact us</a></div>
+            <div class="col-sm-3 text-right"><a href="">book a room</a></div>
           </div>
           <hr class="mt-2">
           <div class="row mb-3 mt-4 pt-1">
-            <div class="col-2 pr-0"><a class="logo-lumber" href=""><img src="media/lumberjack-logo-footer.svg"></a></div>
-            <div class="col-3 adress">
-              <p class="m-0 lite-bold"><a class="lite-bold" href="">128 S Green St, Sonora, CA 95370</a><br>+1 209-536-4694<br><a class="lite-bold" href="">hello@lumberjack.com</a></p>
+            <div class="col-6 col-sm-2 pr-sm-0"><a class="logo-lumber" href=""><img src="media/lumberjack-logo-footer.svg"></a></div>
+            <div class="col-6 col-sm-2 social text-right pl-sm-0 order-sm-4"><a href=""><img src="media/ta.svg"></a><a href=""><img src="media/ig.svg"></a><a href=""><img src="media/tw.svg"></a><a href=""><img src="media/fb.svg"></a></div>
+            <div class="col-12 col-sm-3 adress">
+              <p class="m-0 lite-bold pt-4 pt-sm-0 pb-5 pb-sm-0"><a class="lite-bold" href="">128 S Green St, Sonora, CA 95370</a><br>+1 209-536-4694<br><a class="lite-bold" href="">hello@lumberjack.com</a></p>
             </div>
-            <div class="col-5 px-5">
-              <div class="px-5">
-                <div class="pl-3">
+            <div class="col-12 col-sm-5 px-sm-5">
+              <div class="px-sm-5">
+                <div class="pl-sm-3">
                   <p class="m-0 lite-bold">Sign up for updates:</p>
                   <input type="email" placeholder="your e-mail">
                 </div>
               </div>
             </div>
-            <div class="col-2 social text-right pl-0"><a href=""><img src="media/ta.svg"></a><a href=""><img src="media/ig.svg"></a><a href=""><img src="media/tw.svg"></a><a href=""><img src="media/fb.svg"></a></div>
           </div>
           <div class="row pt-3">
             <div class="col-12 text-center">
-              <p class="small m-0 text-uppercase" style="vertical-align: bottom;">Hotel-companion of</p>
+              <p class="small m-0 text-uppercase mobil-small-text" style="vertical-align: bottom;">Hotel-companion of</p>
             </div>
           </div>
-          <div class="row align-items-end pb-4">
+          <div class="row align-items-end pb-4 d-none d-sm-flex">
             <div class="col">
               <p class="small m-0 text-uppercase">© 2021 hotel lumberjack. All Rights Reserved</p>
             </div>
             <div class="col text-center"><a class="sonara-logo" href=""><img src="media/logo-sonora.svg"></a></div>
             <div class="col text-right"><a class="lite small pr-3 text-uppercase" href="privacy.html">Privacy policy</a><a class="lite small text-uppercase" href="">Accessibility</a></div>
+          </div>
+          <div class="row align-items-end pb-4 d-sm-none">
+            <div class="col-3 pr-0"><a class="lite small text-uppercase mobil-small-text" href="privacy.html">Privacy policy</a></div>
+            <div class="col-6 text-center"><a class="sonara-logo" href=""><img src="media/logo-sonora.svg"></a></div>
+            <div class="col-3 pl-0 text-right"><a class="lite small text-uppercase mobil-small-text" href="">Accessibility</a></div>
           </div>
         </div>
       </footer>

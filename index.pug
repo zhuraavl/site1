@@ -11,6 +11,9 @@ html(lang='en')
     meta(name='author', content='')
     link(rel='shortcut icon', href='favicon.ico')
     link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css')
+    
+
     script.
       document.documentElement.className = 'js';
   body.home
@@ -26,16 +29,12 @@ html(lang='en')
         .hero-gallery
           .hero-item.i-one(style='animation-duration: 20s;')
             img(src='https://a.storyblok.com/f/87746/3000x2000/1f95f71c1d/0u1a3004.jpg')
-          
-          
           .hero-item.i-two(style='animation-duration: 20s;')
-            img(src='https://a.storyblok.com/f/87746/3000x1999/a3c591b570/dji_0405.jpg')
-            
+            img(src='https://a.storyblok.com/f/87746/3000x1999/a3c591b570/dji_0405.jpg')  
           .hero-item.i-three(style='animation-duration: 40s;')
             img(src='https://a.storyblok.com/f/87746/3000x2000/57a7d1dd25/0u1a2958.jpg')
           .hero-item.i-four(style='animation-duration: 10s;')
             img(src='https://a.storyblok.com/f/87746/3000x2000/57a7d1dd25/0u1a2958.jpg')
-          
           .hero-item.i-five(style='animation-duration: 10s;')
             img(src='https://a.storyblok.com/f/87746/3000x2000/83c618ad3a/0u1a0688.jpg')
         //.gallery.d-none
@@ -78,17 +77,18 @@ html(lang='en')
       
       
       section.hello
-        .container.pb-5
+        .container.pb-sm-5
           .row.pt-5
-            .col-12.text-center.pt-5.pr-5
+            .col-12.text-center.px-0.pt-3.pt-sm-5.pr-sm-5.pl-sm-3
+                img.d-sm-none(src="media/main-mobil-1.svg" style="width: 100%; margin: auto;")
                 img.d-none.d-sm-block(src="media/hello-scene-1.svg" style="width: 30%; margin:auto; margin-right: 3.5vw;")
           .row.pt-4
             .col-12.col-md-6.px-5
               .pr-4.pl-5
                 img.d-none.d-sm-block(src="media/hello-scene-2.svg")
             .col-12.col-md-6.pt-4
-              h2 hello stranger
-              p Hotel Lumberjack is proudly located at the center of historic Sonora, California. Our hotel is a newly envisaged Americana Motel experience. We’re in the heart of the Gold Country, close to curated boutiques and fantastic dining. You’ll also be able to walk along Dragoon Gulch Trail or take a drive to Yosemite National Park. Or take advantage of abundant outdoor recreational activities, from boating to hiking all nearby. If you’re more in the mood for a relaxing time, visit local wineries and breweries with family and friends. 
+              h2.pr-5.pr-sm-0 hello stranger
+              p.mb-1.mb-sm-3 Hotel Lumberjack is proudly located at the center of historic Sonora, California. Our hotel is a newly envisaged Americana Motel experience. We’re in the heart of the Gold Country, close to curated boutiques and fantastic dining. You’ll also be able to walk along Dragoon Gulch Trail or take a drive to Yosemite National Park. Or take advantage of abundant outdoor recreational activities, from boating to hiking all nearby. If you’re more in the mood for a relaxing time, visit local wineries and breweries with family and friends. 
               p.small.font-italic Additionally, all of our rooms have been thoughtfully designed with working niches, oversized beds and large walk-in showers with eco-friendly amenities throughout. At Hotel Lumberjack we love living at the intersection of nature and design and we can’t wait to welcome you!
               a.link(href="about.html") more about hotel
               .row
@@ -101,23 +101,29 @@ html(lang='en')
       
       section
         .container
-          .row.pt-5
+          .row.pt-3.pt-sm-5
             .col-12
               hr
               h2.pb-2  Meet our rooms
               .home-rooms-slider
                 .item
-                  a(href="products.html/#ada-room")
-                    img(src="media/room1.jpg")
-                    p.bold ADA ROOM
+                  img(src="media/room1.jpg" data-caption="ADA ROOM")
+                  img(src="https://images.unsplash.com/photo-1622495805440-0075dfea3318?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" data-caption="ADA ROOM")
+                  img(src="https://images.unsplash.com/photo-1625921765718-40e14ee8641c?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" data-caption="ADA ROOM")
+                  img(src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" data-caption="ADA ROOM")
+                  p.bold ADA ROOM
+                  
+                  
+                  
                 .item
-                  a(href="products.html/#ada-room")
-                    img(src="media/room2.jpg")
-                    p.bold double queen room
+                  img(src="media/room2.jpg" data-caption="double queen room")
+                  img(src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" data-caption="double queen room")
+                  p.bold double queen room
+                  
                 .item
-                  a(href="products.html/#ada-room")
-                    img(src="media/room3.jpg")
-                    p.bold double queen room
+                  img(src="media/room3.jpg" data-caption="double queen")
+                  img(src="https://unsplash.com/photos/67IqLbpNiRI" data-caption="double queen")
+                  p.bold double queen room
         .py-5
       
       
@@ -125,17 +131,18 @@ html(lang='en')
      
       
       section.explore
-        .py-5
+        .py-sm-5
         .container
-          .row.p-5
-            .col-12.col-sm-6.pb-4.pt-4.pr-5
-              img(src="media/explore-scene-1.svg")
-            .col-12.col-sm-6.pt-5.pr-5
+          .row.p-sm-5
+            .col-12.col-sm-6.pb-4.pt-4.pr-sm-5
+              img.d-sm-none(src="media/main-mobil-2.svg" style="width: 100%; margin: auto;")
+              img.d-none.d-sm-block(src="media/explore-scene-1.svg")
+            .col-12.col-sm-6.pt-sm-5.pr-sm-5
               h2 Explore Historic Sonora and Our Surroundings
               p Whether you are a history buff, a fan of everything outdoors, a gambler, a shopping fiend, or someone that has to do and see it all, Sonora is the perfect place for you. Our local area of downtown Sonora, offers a vibrant local community with arts, shopping, dining, history, and nature, and on top of all that, we are a short drive from Yosemite, one of the most beautiful national parks in the country.
               a.link(href="test") Learn more
-        .py-5
-        .pb-3
+        .py-sm-5
+        .pb-sm-3
         
         
          
@@ -150,21 +157,21 @@ html(lang='en')
       section.main-quote
         .container.pt-5
           .row.justify-content-center.pt-5
-            .col-9
-              .slider-quote
+            .col-12.col-sm-9
+              .slider-quote.pl-5.pl-sm-0
                 .item
                   h2 There are several downtown hotels such as the Sonora Inn and Gunn House, from which guests can easily walk to restaurants and shops.
                 .item
                   h2 Whether you are a history buff, a fan of everything outdoors, a gambling man (or woman!), a shopping fiend, or someone 
-              .py-1
+              .py-sm-1
               hr
-              .py-2
+              .py-sm-2
               .slider-quote-footer
                 .item
-                  img(src="media/Los_Angeles_Times_logo.svg" style="width: 36%;")
+                  img.quote-logo-one(src="media/Los_Angeles_Times_logo.svg")
                   p.text-uppercase.pt-2.small.lite-bold – los angeles times, april 12, 2018
                 .item
-                  img(src="media/Los_Angeles_Times_logo.svg" style="width: 36%;")
+                  img.quote-logo-one(src="media/Los_Angeles_Times_logo.svg")
                   p.text-uppercase.pt-2.small.lite-bold – another slide text description
 
         .py-5
@@ -175,21 +182,7 @@ html(lang='en')
       include footer
           
           
-      script(type='text/javascript').
-        (function () {
-        var params = {"propertyId":"754508"};
-        var paramsArr = [];
-        var pl2 = document.createElement("script");
-        for(key in params) { paramsArr.push(key + "=" +
-        encodeURIComponent(params[key])) };
-        pl2.type = "text/javascript";
-        pl2.async = true;
-        pl2.src = "https://www.ada-tray.com/adawidget/?" +
-        btoa(paramsArr.join("&"));
-        (document.getElementsByTagName("head")[0] ||
-        document.getElementsByTagName("body")[0]).appendChild(pl2);
-        })();
-     
+      
              
   
   
@@ -207,10 +200,36 @@ html(lang='en')
   
   
   
-  
-  
+ 
   
   
     script(src="js/jquery.min.js")      
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js")
     script(src="js/slick.min.js")
     script(src="js/script.js")
+    
+    
+    script.
+        (function () {
+          var params = {"propertyId":"754508"};
+          var paramsArr = [];
+          var pl2 = document.createElement("script");
+          for(key in params) { paramsArr.push(key + "=" +
+          encodeURIComponent(params[key])) };
+          pl2.type = "text/javascript";
+          pl2.async = true;
+          pl2.src = "https://www.ada-tray.com/adawidget/?" +
+          btoa(paramsArr.join("&"));
+          (document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]).appendChild(pl2);
+        })();
+        jQuery(document).ready(function ($) {
+          $('.home-rooms-slider').slickLightbox({
+            src: 'src',
+            itemSelector: 'img',
+            caption: 'caption',
+            imageMaxHeight: '.7',
+            captionPosition: 'dynamic',
+            background: '#274D44'
+          });
+        });

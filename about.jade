@@ -22,12 +22,12 @@ html(lang='en')
       
       
       section.pt-5
-        .container.py-5
-          .row.pt-5
-            .col-12.col-sm-6.px-5
+        .container.py-4.py-sm-5
+          .row.pt-sm-5
+            .col-12.col-sm-6.px-sm-5
               img(src="media/about-scene-1.svg")
-            .col-12.col-sm-6.pl-5
-              h2.mt-5 About our Hotel and Design
+            .col-12.col-sm-6.pl-sm-5
+              h2.mt-sm-5 About our Hotel and Design
               p Hotel Lumberjack has been developed by Balbek Bureau an internationally acclaimed group of forward-thinking designers. Your guest room has been inspired by the Lumberjack culture, with rustic wood accents, combined with modern technology, such as a 50” television that connects directly with your favorite media subscriptions (Netflix, HBO, etc.) or even with your video gaming console. Power strips are conveniently located at your bedside nightstand. You’ll enjoy a good night’s rest on our Sealy Posturepedic mattresses with superior quality bedding. Room keys are RFID for easy access and the interior of your room has a deadbolt lock as well as a safe for belongings.
               
               
@@ -59,13 +59,13 @@ html(lang='en')
       
       section.features
         .container.mb-5.pt-5
-          .row.pt-5.pb-4
+          .row.pt-4.pt-sm-5.pb-sm-4
             .col-12.col-md-6.pr-5
               h2  See more about our amenities
             .col-12.col-md-6
               p Our bathrooms feature custom contemporary sinks, large walk-in showers and Kohler fixtures throughout. And if you need space to work, you’ll enjoy our large desk with comfortable seating areas. All rooms include a microwave, coffeemaker and small fridge. And of course, we want you to start your morning right! You’ll enjoy an extensive and complimentary continental breakfast.
          
-          .row.mb-5.mt-5
+          .row.mb-5.mt-sm-5.pb-3.pb-sm-0
             .col-12
               .features-slider
                 .box
@@ -139,53 +139,63 @@ html(lang='en')
       
       
       
-      section.pt-5
+      section.pt-4.pt-sm-5
         .container.mb-5
           .row
             .col-6.col-sm-8
-              img(src="media/about-scene-3.svg" style="width: 13%;")
-            .col-6.col-sm-4.text-center
-              img(src="media/about-scene-4.svg" style="width: 28%; transform: translateY(15%);")
+              img.d-sm-none(src="media/about-scene-3.svg" style="width: 50%;")
+              img.d-none.d-sm-block(src="media/about-scene-3.svg" style="width: 13%;")
+            .col-6.col-sm-4.text-right.text-sm-center
+              img.d-sm-none(src="media/about-scene-4.svg" style="width: 35%; transform: translate(-60%, 100%);")
+              img.d-none.d-sm-block(src="media/about-scene-4.svg" style="width: 28%; transform: translateY(15%);")
           .row.justify-content-center
-            .col-10.px-5
+            .col-12.col-sm-10.px-sm-5
               .row
-                .col-12.col-md-5
+                .col-12.col-md-5.pt-3.pt-sm-0
                   h2 Our House policies
               
               hr
               .row.pt-2
                 .col-12.col-sm-6
-                  h5.bold.text-uppercase Check-in
+                  h5.bold.text-uppercase.mb-0.mb-sm-2 Check-in
                   h2 4:00 PM
-                  p.font-italic.pr-3 Early check-in is offered based on availability. Additional day charge, plus tax may apply for early check-in
+                  p.font-italic.pr-3.mobil-small Early check-in is offered based on availability. Additional day charge, plus tax may apply for early check-in
                 .col-12.col-sm-6
-                  h5.bold.text-uppercase Check-out
+                  h5.bold.text-uppercase.mb-0.mb-sm-2 Check-out
                   h2 11:00 aM
-                  p.font-italic.pr-5 Additional day charge, plus tax may apply for late check-out
+                  p.font-italic.pr-5.mobil-small Additional day charge, plus tax may apply for late check-out
 
 
-              hr
-              .row
-                .col-12.col-sm-6
-                  h3.text-uppercase
+              hr.d-none.d-sm-block
+              .row.d-none.d-sm-flex
+                .col-12.col-sm-6.my-2.my-sm-0
+                  h3.text-uppercase.pr-4.pr-0
                     | Credit Card required at 
-                    br
                     | booking and check-in
                 .col-12.col-sm-6
                   h3.text-uppercase Prepaid & Debit cards are not accepted
               hr
               .row.pt-2
                 .col-12.col-sm-6
-                  h5.bold.text-uppercase Cancellation policies:
+                  h5.bold.text-uppercase.mb-0.mb-sm-2 Cancellation policies:
                   p.text-uppercase.pr-5.lite-bold 48-hour cancellation policy
                   
                   
                 .col-12.col-sm-6
-                  h5.bold.text-uppercase Smoking in guest rooms:
+                  h5.bold.text-uppercase.mb-0.mb-sm-2 Smoking in guest rooms:
                   p.text-uppercase.lite-bold incurs a $500 cleaning fee.
                   
+              hr.d-sm-none.mt-0
+              
+              .row.d-sm-none
+                .col-12.col-sm-6.my-2.my-sm-0
+                  h3.text-uppercase.pr-4.pr-0
+                    | Credit Card required at 
+                    | booking and check-in
+                .col-12.col-sm-6
+                  h3.text-uppercase Prepaid & Debit cards are not accepted
                   
-          .row.py-5.my-3
+          .row.py-1.py-sm-5.my-3
             .col-3.pt-5.d-none.d-sm-block
               .pt-5
               .pt-5
