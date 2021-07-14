@@ -420,6 +420,17 @@ a {
   margin-right: -6.8%;
 }
 .slick-lightbox {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+    top: 3.2vh;
+    border-top: 3px solid #FDF5E6;
+    display: block;
+  }
   .slick-list {
     margin-right: 0 !important;
   }
@@ -429,16 +440,66 @@ a {
 .slick-lightbox-slick-item {
   position: relative;
 }
-.slick-lightbox-slick-caption {
+.slick-lightbox .slick-lightbox-slick-caption {
   position: absolute;
   width: 80%;
   left: 0;
-  right: 0;
-  margin: auto;
+  right: -14vw;
+  margin: auto ;
   display: block;
-  top: 30px;
+  top: 6vh;
   text-transform: uppercase; 
   font-family: 'Bowlby One SC';
+  font-size: 2.2vw;
+  color: #FDF5E6;
+}
+
+.slick-lightbox-slick-img {
+  max-width: auto !important;
+  width: auto !important;
+}
+
+.slick-lightbox .slick-arrow {
+  top: 6vh;
+}
+
+
+.slick-lightbox .slick-next {
+  background-image: url(../media/arrow-right-w.svg) !important;
+  right: 5vw !important;
+  left: auto !important;
+}
+.slick-lightbox .slick-prev {
+  background-image: url(../media/arrow-left-w.svg) !important;
+  left: auto !important;
+  right: 10vw !important;
+}
+
+
+.slick-lightbox .slick-lightbox-slick-item-inner {
+  margin-top: 4vh;
+}
+
+.slick-lightbox-slick-item {
+  margin-left: -15.5vw;
+}
+.slick-lightbox .slick-lightbox-close {
+  width: 2.8vw;
+  height: 2.8vw;
+  left: 5vw;
+  right: auto;
+  top: 6vh;
+}
+.slick-lightbox .slick-lightbox-close:before {
+  content: '';
+  background-image: url(../media/close-w.svg);
+  width: 2.8vw;
+  height: 2.8vw;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
 }
 
 

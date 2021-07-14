@@ -124,14 +124,14 @@
               <hr>
               <h2 class="pb-2"> Meet our rooms</h2>
               <div class="home-rooms-slider">
-                <div class="item"><img src="media/room1.jpg" data-caption="ADA ROOM"><img src="https://images.unsplash.com/photo-1622495805440-0075dfea3318?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="ADA ROOM"><img src="https://images.unsplash.com/photo-1625921765718-40e14ee8641c?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="ADA ROOM"><img src="https://images.unsplash.com/photo-1593642533144-3d62aa4783ec?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="ADA ROOM">
+                <div class="item"><img src="media/room1.jpg" data-caption="ADA ROOM"><img src="media/room1.jpg" data-caption="ADA ROOM"><img src="media/room1.jpg" data-caption="ADA ROOM">
                   <p class="bold">ADA ROOM</p>
                 </div>
-                <div class="item"><img src="media/room2.jpg" data-caption="double queen room"><img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" data-caption="double queen room">
+                <div class="item"><img src="media/room2.jpg" data-caption="double queen room"><img src="media/room2.jpg" data-caption="double queen room"><img src="media/room2.jpg" data-caption="double queen room">
                   <p class="bold">double queen room</p>
                 </div>
-                <div class="item"><img src="media/room3.jpg" data-caption="double queen"><img src="https://unsplash.com/photos/67IqLbpNiRI" data-caption="double queen">
-                  <p class="bold">double queen room</p>
+                <div class="item"><img src="media/room3.jpg" data-caption="double queen"><img src="media/room3.jpg" data-caption="double queen"><img src="media/room3.jpg" data-caption="double queen">
+                  <p class="bold">double queen</p>
                 </div>
               </div>
             </div>
@@ -259,9 +259,14 @@
           src: 'src',
           itemSelector: 'img',
           caption: 'caption',
-          imageMaxHeight: '.7',
+          imageMaxHeight: '.94',
           captionPosition: 'dynamic',
-          background: '#274D44'
+          background: '#274D44',
+          slick: {
+            centerMode: false,
+            centerPadding: '0vw',
+            variableWidth: true
+          }
         });
       });
     </script>
