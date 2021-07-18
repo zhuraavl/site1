@@ -91,6 +91,7 @@ footer input {
   padding: 10px 0;
   width: 100%;
   text-transform: uppercase;
+  border-radius: 0;
   @include media-breakpoint-down(xs) {
     width: 75%;
     border-bottom: 1.5px solid #FDF5E6;

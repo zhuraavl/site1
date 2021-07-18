@@ -37,42 +37,6 @@ html(lang='en')
             img(src='https://a.storyblok.com/f/87746/3000x2000/57a7d1dd25/0u1a2958.jpg')
           .hero-item.i-five(style='animation-duration: 10s;')
             img(src='https://a.storyblok.com/f/87746/3000x2000/83c618ad3a/0u1a0688.jpg')
-        //.gallery.d-none
-          .gallery__container
-            .gallery-item-wrapper.w-50.gallery-item-wrapper-1.transform(data-order='1' style='animation-duration: 40s; padding-top: 5vh; padding-left: 2vw; padding-right: 0vw; transform: translate(0px, 790.75012px); opacity: 1;')
-              .gallery-item
-                div
-                  img(src='https://a.storyblok.com/f/87746/3000x2000/1f95f71c1d/0u1a3004.jpg')
-                  .image-caption
-                    div(class='image-caption__container pt-5 text-center')
-                      a(href='/home') 45°50'46.3"S 170°43'50.2"E
-            .gallery-item-wrapper.w-third.gallery-item-wrapper-2.transform(data-order='2' style='animation-duration: 45s; padding-top: 0vh; padding-left: 0vw; padding-right: 0vw; transform: translate(0px, 793.33344px); opacity: 1;')
-              .gallery-item
-                div
-                  img(src='https://a.storyblok.com/f/87746/3000x1999/a3c591b570/dji_0405.jpg')
-                  .image-caption
-                    div(class='image-caption__container pt05 t-center')
-                      a(href='/home') 45°52'52.4"S 170°40'51.4"E
-            .gallery-item-wrapper.w-third.gallery-item-wrapper-3.transform(data-order='3' style='animation-duration: 35s; padding-top: 0vh; padding-left: 15vw; padding-right: 5vw; transform: translate(0px, 787.42871px); opacity: 1;')
-              .gallery-item
-                div
-                  img(src='https://a.storyblok.com/f/87746/3000x2000/57a7d1dd25/0u1a2958.jpg')
-                  .image-caption
-                    div(class='image-caption__container pt05 t-center')
-                      a(href='/home') 45°59'24.6"S 170°15'43.1"E
-            .gallery-item-wrapper.w-50.gallery-item-wrapper-4.transform(data-order='4' style='animation-duration: 30s; padding-top: 15vh; padding-left: 0vw; padding-right: 2vw; transform: translate(0px, 783.00018px); opacity: 1;')
-              .gallery-item
-                div
-                  img(src='https://a.storyblok.com/f/87746/3000x2000/83c618ad3a/0u1a0688.jpg')
-                  .image-caption
-                    div(class='image-caption__container pt05 t-center')
-                      a(href='/home')
-            .gallery-item-wrapper.w-50.gallery-item-wrapper-5.transform(data-order='5' style='animation-duration: 35s; padding-top: 15vh; padding-left: 10vw; padding-right: 10vw; transform: translate(0px, 787.42871px); opacity: 1;' data-v-081ab209='')
-              .gallery-item
-                div
-                  video(width='100%' height='auto' autoplay='autoplay' playsinline='' muted='muted' loop='loop' poster='')
-                    source(src='https://a.storyblok.com/f/87746/x/deb0731223/0738_web.mp4' type='video/mp4')
-      
       
       
       
@@ -107,23 +71,48 @@ html(lang='en')
               h2.pb-2  Meet our rooms
               .home-rooms-slider
                 .item
-                  img(src="media/room1.jpg" data-caption="ADA ROOM")
-                  img(src="media/room1.jpg" data-caption="ADA ROOM")
-                  img(src="media/room1.jpg" data-caption="ADA ROOM")
+                  img.open-modal(src="media/room1.jpg")
+                  .lightbox-container
+                    h3.bold.lightbox-title ADA ROOM
+                    .link-box
+                      a.link(href="") more about this room
+                    .lightbox-slider
+                      .item
+                        img(src="media/room1.jpg")
+                      .item
+                        img(src="media/room2.jpg")
+                      .item
+                        img(src="media/room2.jpg")
                   p.bold ADA ROOM
                   
                   
-                  
                 .item
-                  img(src="media/room2.jpg" data-caption="double queen room")
-                  img(src="media/room2.jpg" data-caption="double queen room")
-                  img(src="media/room2.jpg" data-caption="double queen room")
+                  img.open-modal(src="media/room2.jpg")
+                  .lightbox-container
+                    h3.bold.lightbox-title double queen room
+                    .link-box
+                      a.link(href="") more about this room
+                    .lightbox-slider
+                      .item
+                        img(src="media/room2.jpg")
+                      .item
+                        img(src="media/room2.jpg")
+                      .item
+                        img(src="media/room2.jpg")
                   p.bold double queen room
                 .item
-                  img(src="media/room3.jpg" data-caption="double queen")
-                  img(src="media/room3.jpg" data-caption="double queen")
-                  img(src="media/room3.jpg" data-caption="double queen")
-                  
+                  img.open-modal(src="media/room3.jpg")
+                  .lightbox-container
+                    h3.bold.lightbox-title double queen
+                    .link-box
+                      a.link(href="") more about this room
+                    .lightbox-slider
+                      .item
+                        img(src="media/room3.jpg")
+                      .item
+                        img(src="media/room3.jpg")
+                      .item
+                        img(src="media/room3.jpg")
                   p.bold double queen
         .py-5
       
@@ -138,10 +127,11 @@ html(lang='en')
             .col-12.col-sm-6.pb-4.pt-4.pr-sm-5
               img.d-sm-none(src="media/main-mobil-2.svg" style="width: 100%; margin: auto;")
               img.d-none.d-sm-block(src="media/explore-scene-1.svg")
-            .col-12.col-sm-6.pt-sm-5.pr-sm-5
+            .col-12.col-sm-6.pt-sm-5.pr-sm-5.pb-1
               h2 Explore Historic Sonora and Our Surroundings
               p Whether you are a history buff, a fan of everything outdoors, a gambler, a shopping fiend, or someone that has to do and see it all, Sonora is the perfect place for you. Our local area of downtown Sonora, offers a vibrant local community with arts, shopping, dining, history, and nature, and on top of all that, we are a short drive from Yosemite, one of the most beautiful national parks in the country.
-              a.link(href="test") Learn more
+              a.link(href="test.html") Learn more
+              
         .py-sm-5
         .pb-sm-3
         
@@ -180,9 +170,15 @@ html(lang='en')
        
         
         
+      
+      
+      
       include footer
           
-          
+    .modal-box  
+      .close-modal-lightbox
+      .modal-container
+      
       
              
   
@@ -224,18 +220,4 @@ html(lang='en')
           (document.getElementsByTagName("head")[0] ||
           document.getElementsByTagName("body")[0]).appendChild(pl2);
         })();
-        jQuery(document).ready(function ($) {
-          $('.home-rooms-slider').slickLightbox({
-            src: 'src',
-            itemSelector: 'img',
-            caption: 'caption',
-            imageMaxHeight: '.94',
-            captionPosition: 'dynamic',
-            background: '#274D44',
-            slick: {
-              centerMode: false,
-              centerPadding: '0vw',
-              variableWidth: true
-            }
-          });
-        });
+        

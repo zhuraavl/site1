@@ -24,6 +24,7 @@ header#header
 
 
 
+
   .off-menu
     button.close-menu
       img(src='media/close.svg')
@@ -46,13 +47,14 @@ header#header
           |book now
       
     .bottom-info
-      img.menu-logo(src='media/menu-logo.svg')
-      p.my-3.lite-bold.text-uppercase
-        | 128 S Green St, Sonora, CA 95370
+      a(href="/")
+        img.menu-logo(src='media/menu-logo.svg')
+      p.my-3.text-uppercase.pb-2.pb-sm-0
+        a.lite-bold(href="") 128 S Green St, Sonora, CA 95370
         br
-        | +1 209-536-4694
+        a.lite-bold(href="tel:129") +1 209-536-4694
         br
-        | hello@lumberjack.com
+        a.lite-bold(href="") hello@lumberjack.com
 
       .social
         a(href="")

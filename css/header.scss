@@ -152,15 +152,7 @@ header.change-color {
       @include media-breakpoint-down(xs) {
         font-size: 23px;
       }
-      img {
-        width: 2vw;
-        vertical-align: top;
-        margin-right: .8vw;
-        @include media-breakpoint-down(xs) {
-          width: 30px;
-          margin-right: 6px;
-        }
-      }
+      
       .link-arrow {
         width: .8vw;
         vertical-align: top;
@@ -187,24 +179,38 @@ header.change-color {
   padding-bottom: .6vh !important;
   width: 14.3vw;
   display: block;
-  
+  img {
+    width: 2vw;
+    vertical-align: top;
+    margin-right: .8vw;
+    @include media-breakpoint-down(xs) {
+      width: 30px;
+      margin-right: 6px;
+      transform: translateY(-5px)
+    }
+  }
   @include media-breakpoint-down(xs) {
     width: 180px;
+    border-bottom: 2px solid #274D44;
+    padding-bottom: 0 !important;
   }
 }
 .close-menu {
   background: transparent;
   border: 0;
   cursor: pointer;
+  padding: 0;
+  
   img {
-    width: 24px;
+    width: 25px;
+    
   }
 }
 .menu-logo {
   height: 8.7vh;
   width: auto;
   @include media-breakpoint-down(xs) {
-    height: 76px;
+    height: 72px;
   }
 }
 
@@ -215,10 +221,14 @@ header.change-color {
   left: 0;
   width: 100%;
   padding: 2rem;
-  p {
+  p, a {
     font-size: 1.1vw;
     line-height: 1.6;
+    @include media-breakpoint-down(xs)  {
+      font-size: 15px;
+    }
   }
+  
   @include media-breakpoint-down(xs) {
     padding: 1rem;
   }
