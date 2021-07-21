@@ -816,7 +816,7 @@ section.explore {
   .open {
     border-bottom: 0;
     font-size: 3.1vw; 
-    padding: 1.25vw 1.7vw;
+    padding: 1.25vw 1.7vw !important;
     @include media-breakpoint-down(xs) {
       font-size: 31px;
       padding: 25px 15px;

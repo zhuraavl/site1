@@ -6974,7 +6974,7 @@ section.explore .container {
 .accordion-container .open {
   border-bottom: 0;
   font-size: 3.1vw;
-  padding: 1.25vw 1.7vw; }
+  padding: 1.25vw 1.7vw !important; }
   @media (max-width: 575.98px) {
     .accordion-container .open {
       font-size: 31px;
@@ -7410,7 +7410,8 @@ footer {
   background: #274D44;
   color: #FDF5E6;
   position: relative;
-  z-index: 200; }
+  z-index: 200;
+  overflow-x: hidden; }
   footer a {
     color: #FDF5E6;
     text-transform: uppercase; }
@@ -7470,23 +7471,46 @@ footer .slick-prev {
     @media (max-width: 575.98px) {
       .social img {
         height: 31px; } }
-footer input {
+.footer-signup-input {
   background: transparent;
   border: 0;
   border-bottom: 3px solid #FDF5E6;
   color: #FDF5E6;
-  padding: 10px 0;
+  padding: 1.2vh 0;
   width: 100%;
   text-transform: uppercase;
-  border-radius: 0; }
+  border-radius: 0;
+  outline: none; }
   @media (max-width: 575.98px) {
-    footer input {
+    .footer-signup-input {
       width: 75%;
       border-bottom: 1.5px solid #FDF5E6;
       padding-top: 5px;
       outline: none; } }
-  footer input::placeholder {
+  .footer-signup-input::placeholder {
     color: rgba(253, 245, 230, 0.5); }
+
+.footer-signup-sumbit {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  box-shadow: npne;
+  top: 0;
+  right: -1%;
+  color: #FDF5E6;
+  padding: .5em;
+  padding-right: 0;
+  font-size: 1.8vw;
+  cursor: pointer;
+  opacity: 0; }
+  @media (max-width: 575.98px) {
+    .footer-signup-sumbit {
+      font-size: 20px !important;
+      right: 25%; } }
+.footer-signup {
+  position: relative; }
+  .footer-signup.show-submit .footer-signup-sumbit {
+    opacity: 1; }
 
 .sonara-logo {
   display: inline-block;

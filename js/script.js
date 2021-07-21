@@ -46,6 +46,10 @@ else {
   
   
   
+ 
+  
+  
+  
   
   // location accordeon
   $(function () {
@@ -70,7 +74,14 @@ else {
   });
   
   
-  
+  // footer form - state sumbit if have text
+  $('.footer-signup input').on('keyup',function(){
+    $(this).parent().addClass('show-submit');
+    var textLength = $(this).val().length;
+    if(textLength < 1){
+      $(this).parent().removeClass('show-submit');
+    }
+  });
   
   
   
