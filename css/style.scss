@@ -689,6 +689,7 @@ section.explore {
   width: 50%;
   @include media-breakpoint-down(xs) {
     width: 100%;
+    border: 1.5px solid #274D44;
   }
 }
 
@@ -773,7 +774,7 @@ section.explore {
     &.accordion-first-title {
       padding: 3.7vh 1.5vw;
       @include media-breakpoint-down(xs) {
-        padding: 24px 14px 22px;
+        padding: 24px 14px 22px !important;
       }
     }
     &:after {
@@ -819,8 +820,8 @@ section.explore {
     padding: 1.25vw 1.7vw !important;
     @include media-breakpoint-down(xs) {
       font-size: 31px;
-      padding: 25px 15px;
-      padding-right: 40px;
+      padding: 25px 15px !important;
+      padding-right: 50px !important;
     }
     &:before {
       display: none;
@@ -850,32 +851,71 @@ section.explore {
   border: 3px solid #274D44;
   padding: 0;
   box-shadow: none;
+  @include media-breakpoint-down(xs) {
+    max-width: 283px !important;
+    border: 1.5px solid #274D44;
+  }
+}
+.gm-style-iw {
+  
 }
 .gm-style-iw-d {
   overflow: auto !important;
-  
+  > div {
+    overflow-x: hidden; 
+  } 
 }
+.gm-style-iw-d::-webkit-scrollbar {
+  width: 1px !important;
+}
+.gm-style-iw-d::-webkit-scrollbar-track {
+
+}
+
+.gm-style-iw-d::-webkit-scrollbar-thumb {
+  background-color: #274D44 !important;
+}
+
 .marker-box {
   width: 22vw;
+  background: #FDF5E6;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
   h4 {
     font-size: 1.5vw;
     font-family: 'Bowlby One SC';
     text-transform: uppercase;
     padding-top: 1vw;
     padding-left: 1vw;
-    margin-bottom: 0;
+    padding-right: 1vw;
+    margin-bottom: .5vh;
+    @include media-breakpoint-down(xs) {
+      font-size: 23px;
+      padding: 15px 15px 0;
+      padding-right: 28px;
+    }
     & + p {
       text-transform: uppercase;
       margin: 0;
       padding: 0;
       padding-left: 1vw;
+      padding-right: 1vw;
       padding-bottom: 1vw;
+      @include media-breakpoint-down(xs) {
+        font-size: 15px;
+        padding: 1px 15px 15px;
+      }
     }
   }
   p {
     font-family: 'HK Grotesk';
     font-size: 1.1vw;
     padding: 1vw;
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+      padding: 25px 15px 5px;
+    }
   }
 }
 
@@ -884,6 +924,9 @@ section.explore {
   overflow: hidden;
   width: 100%;
   position: relative;
+  @include media-breakpoint-down(xs) {
+    border-top: 1.5px solid #274D44;
+  }
   &:after {
     content: '';
     width: 3px;
@@ -894,6 +937,9 @@ section.explore {
     background: #274D44;
     display: block;
     position: absolute;
+    @include media-breakpoint-down(xs) {
+      width: 1.5px;
+    }
   }
   a {
     float: left;
@@ -902,6 +948,10 @@ section.explore {
     text-transform: uppercase;
     font-size: 1vw;
     padding: .8vw 0 .75vw;
+    @include media-breakpoint-down(xs) {
+      font-size: 15px;
+      padding: 14px 0 12px;
+    }
   }
 }
 .gm-ui-hover-effect {
@@ -911,7 +961,10 @@ section.explore {
   img {
     display: none !important;
   }
-  
+  @include media-breakpoint-down(xs) {
+    top: 20px !important;
+    right: -5px !important;
+  }
   &:after {
     content: '';
     width: .25vw;
@@ -922,6 +975,10 @@ section.explore {
     transform: rotate(-45deg);
     top: 0;
     left: 0;
+    @include media-breakpoint-down(xs) {
+      width: 4px;
+      height: 15px;
+    }
   }
   &:before {
     content: '';
@@ -933,7 +990,10 @@ section.explore {
     transform: rotate(45deg);
     top: 0vw;
     left: 0;
-    
+    @include media-breakpoint-down(xs) {
+      width: 4px;
+      height: 15px;
+    }
     
   }
 }

@@ -121,6 +121,21 @@ header.change-color {
   }
 }
 
+header.change-color-footer {
+  
+  .logo {
+    opacity: 0;
+  }
+  .open-menu {
+    color: #FDF5E6 !important;
+  }
+  .check {
+    svg path {
+      fill: #FDF5E6 !important;
+    }
+  }
+}
+
 
 
 

@@ -45,8 +45,22 @@ else {
 }
   
   
+   
+  if ($(window).width() < 960) {
   
- 
+  }
+else {
+ $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('footer').offset().top - 50) {
+            $("#header").addClass('change-color-footer');
+        } else {
+            $("#header").removeClass('change-color-footer');
+        }
+    });
+});
+  
+  }
   
   
   

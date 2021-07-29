@@ -6871,7 +6871,8 @@ section.explore .container {
   width: 50%; }
   @media (max-width: 575.98px) {
     #map-canvas {
-      width: 100%; } }
+      width: 100%;
+      border: 1.5px solid #274D44; } }
 .marker-link {
   font-family: 'HK Grotesk';
   font-size: 1vw;
@@ -6937,7 +6938,7 @@ section.explore .container {
     padding: 3.7vh 1.5vw; }
     @media (max-width: 575.98px) {
       .accordion-container .js-accordion-title.accordion-first-title {
-        padding: 24px 14px 22px; } }
+        padding: 24px 14px 22px !important; } }
   .accordion-container .js-accordion-title:after {
     content: '';
     position: absolute;
@@ -6978,8 +6979,8 @@ section.explore .container {
   @media (max-width: 575.98px) {
     .accordion-container .open {
       font-size: 31px;
-      padding: 25px 15px;
-      padding-right: 40px; } }
+      padding: 25px 15px !important;
+      padding-right: 50px !important; } }
   .accordion-container .open:before {
     display: none; }
 
@@ -6998,35 +6999,67 @@ section.explore .container {
   border: 3px solid #274D44;
   padding: 0;
   box-shadow: none; }
-
+  @media (max-width: 575.98px) {
+    .gm-style .gm-style-iw-c {
+      max-width: 283px !important;
+      border: 1.5px solid #274D44; } }
 .gm-style-iw-d {
   overflow: auto !important; }
+  .gm-style-iw-d > div {
+    overflow-x: hidden; }
+
+.gm-style-iw-d::-webkit-scrollbar {
+  width: 1px !important; }
+
+.gm-style-iw-d::-webkit-scrollbar-thumb {
+  background-color: #274D44 !important; }
 
 .marker-box {
-  width: 22vw; }
+  width: 22vw;
+  background: #FDF5E6; }
+  @media (max-width: 575.98px) {
+    .marker-box {
+      width: 100%; } }
   .marker-box h4 {
     font-size: 1.5vw;
     font-family: 'Bowlby One SC';
     text-transform: uppercase;
     padding-top: 1vw;
     padding-left: 1vw;
-    margin-bottom: 0; }
+    padding-right: 1vw;
+    margin-bottom: .5vh; }
+    @media (max-width: 575.98px) {
+      .marker-box h4 {
+        font-size: 23px;
+        padding: 15px 15px 0;
+        padding-right: 28px; } }
     .marker-box h4 + p {
       text-transform: uppercase;
       margin: 0;
       padding: 0;
       padding-left: 1vw;
+      padding-right: 1vw;
       padding-bottom: 1vw; }
+      @media (max-width: 575.98px) {
+        .marker-box h4 + p {
+          font-size: 15px;
+          padding: 1px 15px 15px; } }
   .marker-box p {
     font-family: 'HK Grotesk';
     font-size: 1.1vw;
     padding: 1vw; }
-
+    @media (max-width: 575.98px) {
+      .marker-box p {
+        font-size: 16px;
+        padding: 25px 15px 5px; } }
 .buttons-row {
   border-top: 3px solid #274D44;
   overflow: hidden;
   width: 100%;
   position: relative; }
+  @media (max-width: 575.98px) {
+    .buttons-row {
+      border-top: 1.5px solid #274D44; } }
   .buttons-row:after {
     content: '';
     width: 3px;
@@ -7037,6 +7070,9 @@ section.explore .container {
     background: #274D44;
     display: block;
     position: absolute; }
+    @media (max-width: 575.98px) {
+      .buttons-row:after {
+        width: 1.5px; } }
   .buttons-row a {
     float: left;
     width: 50%;
@@ -7044,13 +7080,20 @@ section.explore .container {
     text-transform: uppercase;
     font-size: 1vw;
     padding: .8vw 0 .75vw; }
-
+    @media (max-width: 575.98px) {
+      .buttons-row a {
+        font-size: 15px;
+        padding: 14px 0 12px; } }
 .gm-ui-hover-effect {
   top: 1.2vw !important;
   right: -.5vw !important;
   opacity: 1 !important; }
   .gm-ui-hover-effect img {
     display: none !important; }
+  @media (max-width: 575.98px) {
+    .gm-ui-hover-effect {
+      top: 20px !important;
+      right: -5px !important; } }
   .gm-ui-hover-effect:after {
     content: '';
     width: .25vw;
@@ -7061,6 +7104,10 @@ section.explore .container {
     transform: rotate(-45deg);
     top: 0;
     left: 0; }
+    @media (max-width: 575.98px) {
+      .gm-ui-hover-effect:after {
+        width: 4px;
+        height: 15px; } }
   .gm-ui-hover-effect:before {
     content: '';
     width: .25vw;
@@ -7071,7 +7118,10 @@ section.explore .container {
     transform: rotate(45deg);
     top: 0vw;
     left: 0; }
-
+    @media (max-width: 575.98px) {
+      .gm-ui-hover-effect:before {
+        width: 4px;
+        height: 15px; } }
 .bordered {
   border: 3px solid #274D44;
   position: relative; }
@@ -7638,6 +7688,15 @@ header.change-color .open-menu {
 
 header.change-color .check svg path {
   fill: #274D44 !important; }
+
+header.change-color-footer .logo {
+  opacity: 0; }
+
+header.change-color-footer .open-menu {
+  color: #FDF5E6 !important; }
+
+header.change-color-footer .check svg path {
+  fill: #FDF5E6 !important; }
 
 .off-menu {
   position: fixed;
