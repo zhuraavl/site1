@@ -39,6 +39,7 @@ section {
   position: relative;
   z-index: 10;
   background: #FDF5E6;
+  overflow-x: hidden;
 }
 
 
@@ -1425,6 +1426,98 @@ section.explore {
 
 
 
+.not-found-page {
+  background: #274D44;
+  height: 100vh;
+  @include media-breakpoint-down(xs) {
+      overflow: hidden;
+    }
+  main {
+    height: 100vh;
+    
+  }
+  .not-found {
+    height: 25vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    h2 {
+      color: #FDF5E6;
+    }
+    a {
+      color: #FDF5E6;
+    }
+  }
+  .logo-box {
+    position: absolute;
+    width: 11vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.5vw;
+    z-index: 1000;
+    @include media-breakpoint-down(xs) {
+      background: transparent !important;
+      width: 87px;
+      top: 2vh;
+    }
+  }
+  .logo {
+    display: none;
+    
+  }
+  
+  .pic-left {
+    position: absolute;
+    height: 36vh;
+    top: 0;
+    width: auto;
+    bottom: 0;
+    left: 4vw;
+    right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    @include media-breakpoint-down(xs) {
+      width: 83px;
+      bottom: auto;
+      top: 5vh;
+    }
+  }
+  .pic-right {
+    width: 18vw;
+    position: absolute;
+    right: 10vw;
+    bottom: 5vw;
+    @include media-breakpoint-down(xs) {
+      width: 186px;
+      right: -5vw;
+    }
+  }
+  .link:after {
+    border-bottom: 3px solid #FDF5E6;
+  }
+  
+  
+  header {
+  @include media-breakpoint-down(xs) {
+    background: transparent !important;
+    
+  }
+   
+  
+  .open-menu {
+    color: #FDF5E6 !important;
+  }
+  .check {
+    svg path {
+      fill: #FDF5E6 !important;
+    }
+  }
+}
+}
 
 
 
@@ -1440,6 +1533,8 @@ section.explore {
 // components
 @import "footer.scss";
 @import "header.scss";
+
+
 
 
 

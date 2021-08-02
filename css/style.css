@@ -6426,7 +6426,8 @@ body {
 section {
   position: relative;
   z-index: 10;
-  background: #FDF5E6; }
+  background: #FDF5E6;
+  overflow-x: hidden; }
 
 .container {
   max-width: 90%; }
@@ -7455,6 +7456,75 @@ section.explore .container {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; } }
+
+.not-found-page {
+  background: #274D44;
+  height: 100vh; }
+  @media (max-width: 575.98px) {
+    .not-found-page {
+      overflow: hidden; } }
+  .not-found-page main {
+    height: 100vh; }
+  .not-found-page .not-found {
+    height: 25vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center; }
+    .not-found-page .not-found h2 {
+      color: #FDF5E6; }
+    .not-found-page .not-found a {
+      color: #FDF5E6; }
+  .not-found-page .logo-box {
+    position: absolute;
+    width: 11vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.5vw;
+    z-index: 1000; }
+    @media (max-width: 575.98px) {
+      .not-found-page .logo-box {
+        background: transparent !important;
+        width: 87px;
+        top: 2vh; } }
+  .not-found-page .logo {
+    display: none; }
+  .not-found-page .pic-left {
+    position: absolute;
+    height: 36vh;
+    top: 0;
+    width: auto;
+    bottom: 0;
+    left: 4vw;
+    right: auto;
+    margin-top: auto;
+    margin-bottom: auto; }
+    @media (max-width: 575.98px) {
+      .not-found-page .pic-left {
+        width: 83px;
+        bottom: auto;
+        top: 5vh; } }
+  .not-found-page .pic-right {
+    width: 18vw;
+    position: absolute;
+    right: 10vw;
+    bottom: 5vw; }
+    @media (max-width: 575.98px) {
+      .not-found-page .pic-right {
+        width: 186px;
+        right: -5vw; } }
+  .not-found-page .link:after {
+    border-bottom: 3px solid #FDF5E6; }
+  @media (max-width: 575.98px) {
+    .not-found-page header {
+      background: transparent !important; } }
+  .not-found-page header .open-menu {
+    color: #FDF5E6 !important; }
+  .not-found-page header .check svg path {
+    fill: #FDF5E6 !important; }
 
 footer {
   background: #274D44;
