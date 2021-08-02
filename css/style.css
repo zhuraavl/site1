@@ -6786,6 +6786,12 @@ section.explore .container {
   .features .box.active h2, .features .box.active h3, .features .box.active p {
     opacity: 1 !important; }
 
+.room-hero-text-box::-webkit-scrollbar {
+  width: 3px !important; }
+
+.room-hero-text-box::-webkit-scrollbar-thumb {
+  background-color: #274D44 !important; }
+
 .rooms-hero {
   width: 32vw;
   border: 3px solid #274D44;
@@ -6796,8 +6802,18 @@ section.explore .container {
   left: 0;
   z-index: 10;
   background: #FDF5E6;
-  padding-left: 2vw;
-  padding-right: 2vw; }
+  overflow: hidden; }
+  .rooms-hero .room-hero-text-box {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 13vh; }
+    @media (max-width: 575.98px) {
+      .rooms-hero .room-hero-text-box {
+        padding-right: 23px;
+        padding-left: 19px;
+        padding-bottom: 5px; } }
   @media (max-width: 575.98px) {
     .rooms-hero {
       width: 95%;
@@ -6823,7 +6839,8 @@ section.explore .container {
 
 .amenities-button {
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 15px; }
   .amenities-button span {
     display: none; }
     .amenities-button span:first-child {
@@ -6842,7 +6859,8 @@ section.explore .container {
   text-align: center;
   padding: 2.25vh 0 2vh;
   font-size: 1.5vw;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background: #FDF5E6; }
   @media (max-width: 575.98px) {
     .book-button {
       font-size: 23px;

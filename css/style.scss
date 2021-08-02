@@ -577,7 +577,14 @@ section.explore {
 
 
 
+.room-hero-text-box::-webkit-scrollbar {
+  width: 3px !important;
+}
 
+
+.room-hero-text-box::-webkit-scrollbar-thumb {
+  background-color: #274D44 !important;
+}
 
 
 .rooms-hero {
@@ -590,8 +597,19 @@ section.explore {
   left: 0;
   z-index: 10;
   background: #FDF5E6;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  overflow: hidden;
+  .room-hero-text-box {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 13vh;
+    @include media-breakpoint-down(xs) {
+      padding-right: 23px;
+      padding-left: 19px;
+      padding-bottom: 5px;
+    }
+  }
   @include media-breakpoint-down(xs) {
     width: 95%;
     position: relative;
@@ -622,6 +640,7 @@ section.explore {
 .amenities-button {
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 15px;
   span {
     display: none;
     &:first-child {
@@ -649,6 +668,7 @@ section.explore {
   padding: 2.25vh 0 2vh;
   font-size: 1.5vw;
   text-transform: uppercase;
+  background: #FDF5E6;
   @include media-breakpoint-down(xs) {
     font-size: 23px; 
     border-top: 1.5px solid #274D44;
