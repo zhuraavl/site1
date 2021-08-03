@@ -101,7 +101,13 @@ else {
   
   
   
-
+  // room page info box height
+  $(function () {
+  var roomboxheight = $(".rooms-slider img").height();
+  $(".rooms-hero").css("min-height", roomboxheight);
+  
+});
+  
 
   
   // room lightbox modal content
