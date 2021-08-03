@@ -190,10 +190,21 @@ header.change-color-footer {
 }
 
 .book-now-button {
-  border-bottom: 3px solid #274D44;
+  position: relative;
   padding-bottom: .6vh !important;
-  width: 14.3vw;
-  display: block;
+  display: inline-block !important;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -.2vh;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #274D44;
+    @include media-breakpoint-down(xs) {
+      border-bottom: 2px solid #274D44;
+      bottom: -1px;
+    }
+  }
   img {
     width: 2vw;
     vertical-align: top;
@@ -205,8 +216,7 @@ header.change-color-footer {
     }
   }
   @include media-breakpoint-down(xs) {
-    width: 180px;
-    border-bottom: 2px solid #274D44;
+    
     padding-bottom: 0 !important;
   }
 }

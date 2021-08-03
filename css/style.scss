@@ -376,6 +376,9 @@ a {
   transition: all .3s;
   &:hover {
     transform: translateX(10px);
+    @include media-breakpoint-down(xs) {
+      transform: translateX(5px);
+    }
   }
   
 }
@@ -384,6 +387,9 @@ a {
   transition: all .3s;
   &:hover {
     transform: translateX(-10px);
+    @include media-breakpoint-down(xs) {
+      transform: translateX(-5px);
+    }
   }
   
 }

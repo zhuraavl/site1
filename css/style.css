@@ -6653,13 +6653,17 @@ a {
   transition: all .3s; }
   .slick-next:hover {
     transform: translateX(10px); }
-
+    @media (max-width: 575.98px) {
+      .slick-next:hover {
+        transform: translateX(5px); } }
 .slick-prev {
   background-image: url(../media/arrow-left.svg);
   transition: all .3s; }
   .slick-prev:hover {
     transform: translateX(-10px); }
-
+    @media (max-width: 575.98px) {
+      .slick-prev:hover {
+        transform: translateX(-5px); } }
 .slick-slide, .slick-slide * {
   outline: none !important; }
 
@@ -7828,10 +7832,20 @@ header.change-color-footer .check svg path {
         height: 42px;
         margin-right: 2px; } }
 .book-now-button {
-  border-bottom: 3px solid #274D44;
+  position: relative;
   padding-bottom: .6vh !important;
-  width: 14.3vw;
-  display: block; }
+  display: inline-block !important; }
+  .book-now-button:after {
+    content: '';
+    position: absolute;
+    bottom: -.2vh;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #274D44; }
+    @media (max-width: 575.98px) {
+      .book-now-button:after {
+        border-bottom: 2px solid #274D44;
+        bottom: -1px; } }
   .book-now-button img {
     width: 2vw;
     vertical-align: top;
@@ -7843,8 +7857,6 @@ header.change-color-footer .check svg path {
         transform: translateY(-5px); } }
   @media (max-width: 575.98px) {
     .book-now-button {
-      width: 180px;
-      border-bottom: 2px solid #274D44;
       padding-bottom: 0 !important; } }
 .close-menu {
   background: transparent;
