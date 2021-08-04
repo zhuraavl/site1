@@ -7288,6 +7288,9 @@ section.explore .container {
     background: #274D44;
     color: #FDF5E6; }
 
+.error {
+  border-bottom: 2px solid #d33c0f !important; }
+
 .text-input {
   position: relative; }
 
