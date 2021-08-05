@@ -6284,6 +6284,11 @@ a, button {
   font-family: 'Bowlby One SC';
   font-size: 1.148vw;
   letter-spacing: .03vw; }
+  @media (max-width: 575.98px) {
+    a, button {
+      font-size: 16px; } }
+a {
+  word-break: break-word; }
 
 p, input, li {
   font-size: 1.21vw;
@@ -6478,7 +6483,7 @@ main {
   height: 100%;
   top: 100%;
   left: 0;
-  z-index: -10;
+  z-index: 10;
   will-change: transform;
   transition: all cubic-bezier(0.77, 0, 0.18, 1);
   -webkit-animation-name: autoscroll;
@@ -6487,47 +6492,166 @@ main {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  animation-duration: 30s; }
+  animation-duration: 40s; }
 
 .hero-item {
   position: absolute; }
 
-.i-one {
-  left: 5vw;
-  width: 40vw; }
-
-.i-two {
-  right: 10vw;
+.i-one-one {
+  left: 10vw;
   width: 30vw; }
 
-.i-three {
+.i-one-two {
+  right: 10vw;
+  width: 30vw;
+  top: 20vh; }
+
+.i-one-three {
   right: 5vw;
   width: 70vw;
-  top: 65vh; }
-
-.i-four {
+  top: 95vh; }
+  @media (max-width: 575.98px) {
+    .i-one-three {
+      top: 45vh; } }
+.i-one-four {
   left: 10vw;
   width: 30vw;
   top: 155vh; }
-
-.i-five {
+  @media (max-width: 575.98px) {
+    .i-one-four {
+      top: 75vh; } }
+.i-one-five {
   right: 10vw;
   width: 20vw;
   top: 165vh; }
-
+  @media (max-width: 575.98px) {
+    .i-one-five {
+      top: 85vh; } }
+.i-two-one {
+  left: 5vw;
+  width: 30vw;
+  top: 200vh; }
+  @media (max-width: 575.98px) {
+    .i-two-one {
+      top: 105vh; } }
+.i-two-two {
+  right: 20vw;
+  width: 30vw;
+  top: 220vh; }
+  @media (max-width: 575.98px) {
+    .i-two-two {
+      top: 115vh; } }
+.i-two-three {
+  right: 5vw;
+  width: 50vw;
+  top: 285vh; }
+  @media (max-width: 575.98px) {
+    .i-two-three {
+      top: 140vh; } }
+.i-two-four {
+  left: 5vw;
+  width: 30vw;
+  top: 305vh; }
+  @media (max-width: 575.98px) {
+    .i-two-four {
+      top: 150vh; } }
+.i-two-five {
+  left: 15vw;
+  width: 20vw;
+  top: 365vh; }
+  @media (max-width: 575.98px) {
+    .i-two-five {
+      top: 175vh; } }
+.i-three-one {
+  left: 5vw;
+  width: 40vw;
+  top: 420vh; }
+  @media (max-width: 575.98px) {
+    .i-three-one {
+      top: 190vh; } }
+.i-three-two {
+  right: 10vw;
+  width: 30vw;
+  top: 375vh; }
+  @media (max-width: 575.98px) {
+    .i-three-two {
+      top: 180vh; } }
+.i-three-three {
+  left: 10vw;
+  width: 30vw;
+  top: 605vh; }
+  @media (max-width: 575.98px) {
+    .i-three-three {
+      top: 240vh; } }
+.i-three-four {
+  left: 10vw;
+  width: 35vw;
+  top: 545vh; }
+  @media (max-width: 575.98px) {
+    .i-three-four {
+      top: 230vh;
+      right: 15vw;
+      left: auto; } }
+.i-three-five {
+  right: 25vw;
+  width: 20vw;
+  top: 465vh; }
+  @media (max-width: 575.98px) {
+    .i-three-five {
+      top: 260vh; } }
+.i-four-one {
+  right: 15vw;
+  width: 30vw;
+  top: 535vh; }
+  @media (max-width: 575.98px) {
+    .i-four-one {
+      top: 290vh; } }
+.i-four-two {
+  left: 50vw;
+  width: 20vw;
+  top: 585vh; }
+  @media (max-width: 575.98px) {
+    .i-four-two {
+      top: 280vh;
+      left: 10vw; } }
+.i-four-three {
+  right: 15vw;
+  width: 30vw;
+  top: 625vh; }
+  @media (max-width: 575.98px) {
+    .i-four-three {
+      top: 300vh; } }
+.i-four-four {
+  left: 10vw;
+  width: 50vw;
+  top: 705vh; }
+  @media (max-width: 575.98px) {
+    .i-four-four {
+      top: 320vh; } }
+.i-four-five {
+  right: 10vw;
+  width: 20vw;
+  top: 685vh; }
+  @media (max-width: 575.98px) {
+    .i-four-five {
+      top: 350vh; } }
 @-webkit-keyframes autoscroll {
   0% {
     transform: translateY(0);
     opacity: 1; }
   100% {
-    transform: translateY(-300%); } }
+    transform: translateY(-1000%);
+    @media (max-width: 575.98px) {
+      transform: translateY(-100%); } } }
 
 @keyframes autoscroll {
   0% {
     transform: translateY(0);
     opacity: 1; }
   100% {
-    transform: translateY(-300%); } }
+    transform: translateY(-1000%);
+    @media (max-width: 575.98px) {
+      transform: translateY(-100%); } } }
 
 .gallery {
   position: fixed;

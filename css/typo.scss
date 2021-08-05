@@ -125,8 +125,14 @@ a, button {
   font-family: 'Bowlby One SC';
   font-size: 1.148vw; 
   letter-spacing: .03vw;
-  
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+  }
 }
+a {
+  word-break: break-word;
+}
+
 p, input, li {
   font-size: 1.21vw;
   line-height: 1.3;
