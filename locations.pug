@@ -48,13 +48,13 @@ html(lang='en')
                   #accordion.accordion-container
                     h2.accordion-title.js-accordion-title.accordion-first-title attractions
                     .accordion-content
-                      #markers
+                      .markers(data-location-type="attractions")
                     h2.accordion-title.js-accordion-title Food & Drinks
                     .accordion-content
-                      #markerstwo
+                      .markers(data-location-type="food-and-drinks")
                     h2.accordion-title.js-accordion-title Source code
                     .accordion-content
-                      p Shopping & care
+                      .markers(data-location-type="shopping-and-care")
                 #map-canvas
 
 

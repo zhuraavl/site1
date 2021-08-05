@@ -422,51 +422,51 @@ var map1 =
     
 
     var locations = [
-        [new google.maps.LatLng(37.987698,-120.385005), 'Red Church', map1],
-        [new google.maps.LatLng(37.985157,-120.384217), 'Tuolumne County Superior Court', map2],
-        [new google.maps.LatLng(37.985589,-120.383226), 'Tuolumne County Veterans Hall and Museum', map3],
-        [new google.maps.LatLng(37.981756,-120.382416), 'Sonora Opera Hall', map4],
-        [new google.maps.LatLng(37.983794,-120.385635), 'Tuolumne County Museum', map5],
-        [new google.maps.LatLng(37.986775,-120.384149), 'Tuolumne County Fire Museum', map6],
-        [new google.maps.LatLng(38.034101,-120.402048), 'Columbia State Historic Park and Nelson’s Columbia Candy', map7],
-        [new google.maps.LatLng(38.02863,-120.410141), 'Columbia Airport', map8],
-        [new google.maps.LatLng(38.021357,-120.398782), 'Basecamp at Inner Sanctum Cellars', map9],
-        [new google.maps.LatLng(37.950044,-120.414956), 'Railtown 1897', map10],
-        [new google.maps.LatLng(37.935756,-120.351593), 'Teleli Golf Club. 4 miles', map11],
+        [new google.maps.LatLng(37.987698,-120.385005), 'Red Church', map1, 'attractions'],
+        [new google.maps.LatLng(37.985157,-120.384217), 'Tuolumne County Superior Court', map2, 'attractions'],
+        [new google.maps.LatLng(37.985589,-120.383226), 'Tuolumne County Veterans Hall and Museum', map3, 'attractions'],
+        [new google.maps.LatLng(37.981756,-120.382416), 'Sonora Opera Hall', map4, 'attractions'],
+        [new google.maps.LatLng(37.983794,-120.385635), 'Tuolumne County Museum', map5, 'attractions'],
+        [new google.maps.LatLng(37.986775,-120.384149), 'Tuolumne County Fire Museum', map6, 'attractions'],
+        [new google.maps.LatLng(38.034101,-120.402048), 'Columbia State Historic Park and Nelson’s Columbia Candy', map7, 'attractions'],
+        [new google.maps.LatLng(38.02863,-120.410141), 'Columbia Airport', map8, 'attractions'],
+        [new google.maps.LatLng(38.021357,-120.398782), 'Basecamp at Inner Sanctum Cellars', map9, 'attractions'],
+        [new google.maps.LatLng(37.950044,-120.414956), 'Railtown 1897', map10, 'attractions'],
+        [new google.maps.LatLng(37.935756,-120.351593), 'Teleli Golf Club. 4 miles', map11, 'attractions'],
         
 
         //food and drinks
-        [new google.maps.LatLng(37.984228,-120.382258 ), 'Diamondback Grill', map12],
-        [new google.maps.LatLng(37.983641,-120.38236), 'El Arroyo Cantina & Mexican Kitchen', map13],
-        [new google.maps.LatLng(37.985201,-120.383069 ), 'The Independent Wine Co', map14],
-        [new google.maps.LatLng(37.984075,-120.382663 ), 'The Sportsman', map15],
-        [new google.maps.LatLng(37.984096,-120.383055 ), 'Sonora Brewery and Tap Room', map16],
-        [new google.maps.LatLng(37.986424,-120.384055 ), 'Bagel Bin', map17],
-        [new google.maps.LatLng(37.983064,-120.381718 ), 'Emberz Restaurant', map18],
-        [new google.maps.LatLng(37.986138,-120.383744 ), 'Union Hill Coffee', map19],
-        [new google.maps.LatLng(37.984402,-120.382438 ), 'Revive Café', map20],
-        [new google.maps.LatLng(37.983825,-120.382517 ), 'Yoshoku Ramen', map21],
-        [new google.maps.LatLng(37.983912,-120.382573 ), 'Formosa Boba Tea Bar', map22],
-        [new google.maps.LatLng(37.984228,-120.382123 ), 'Zane’s Iron Horse Lounge', map22],
-        [new google.maps.LatLng(38.011781,-120.320037 ), 'Indigeny Reserve', map23],
+        [new google.maps.LatLng(37.984228,-120.382258 ), 'Diamondback Grill', map12, 'food-and-drinks'],
+        [new google.maps.LatLng(37.983641,-120.38236), 'El Arroyo Cantina & Mexican Kitchen', map13, 'food-and-drinks'],
+        [new google.maps.LatLng(37.985201,-120.383069 ), 'The Independent Wine Co', map14, 'food-and-drinks'],
+        [new google.maps.LatLng(37.984075,-120.382663 ), 'The Sportsman', map15, 'food-and-drinks'],
+        [new google.maps.LatLng(37.984096,-120.383055 ), 'Sonora Brewery and Tap Room', map16, 'food-and-drinks'],
+        [new google.maps.LatLng(37.986424,-120.384055 ), 'Bagel Bin', map17, 'food-and-drinks'],
+        [new google.maps.LatLng(37.983064,-120.381718 ), 'Emberz Restaurant', map18, 'food-and-drinks'],
+        [new google.maps.LatLng(37.986138,-120.383744 ), 'Union Hill Coffee', map19, 'food-and-drinks'],
+        [new google.maps.LatLng(37.984402,-120.382438 ), 'Revive Café', map20, 'food-and-drinks'],
+        [new google.maps.LatLng(37.983825,-120.382517 ), 'Yoshoku Ramen', map21, 'food-and-drinks'],
+        [new google.maps.LatLng(37.983912,-120.382573 ), 'Formosa Boba Tea Bar', map22, 'food-and-drinks'],
+        [new google.maps.LatLng(37.984228,-120.382123 ), 'Zane’s Iron Horse Lounge', map22, 'food-and-drinks'],
+        [new google.maps.LatLng(38.011781,-120.320037 ), 'Indigeny Reserve', map23, 'food-and-drinks'],
       
       
         //Shopping and Care
         
-        [new google.maps.LatLng(37.984682,-120.383075  ), 'Candy Vault', map24],
-        [new google.maps.LatLng(37.984515,-120.382506 ), 'Rustic Roses', map25],
-        [new google.maps.LatLng(37.983176,-120.38208), 'Aloft Art Gallery', map26],
-        [new google.maps.LatLng(37.967819,-120.378364), 'Heel To Toe', map27],
-        [new google.maps.LatLng(37.983606,-120.382427), 'Addictions Fashion', map28],
-        [new google.maps.LatLng(37.984287,-120.382843), 'Sonora Fly Company', map29],
-        [new google.maps.LatLng(37.984753,-120.382528), 'Wildbud Co', map30],
-        [new google.maps.LatLng(37.985051,-120.383299), 'Antiques Etcetera', map31],
-        [new google.maps.LatLng(37.983176,-120.38208), 'Aloft Art Gallery', map32],
-        [new google.maps.LatLng(37.983176,-120.38208), 'Sonora Deluxe Barbershop', map33],
-        [new google.maps.LatLng(37.984443,-120.382922), 'La ti Da Salon', map34],
-        [new google.maps.LatLng(37.981308,-120.381808), 'D&D Nails', map35],
-        [new google.maps.LatLng(38.238252,-120.362872), 'Sierra Nevada Adventure Company', map36],
-        [new google.maps.LatLng(37.985103,-120.382753), 'Amala Detox', map37]
+        [new google.maps.LatLng(37.984682,-120.383075  ), 'Candy Vault', map24, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984515,-120.382506 ), 'Rustic Roses', map25, 'shopping-and-care'],
+        [new google.maps.LatLng(37.983176,-120.38208), 'Aloft Art Gallery', map26], 'shopping-and-care',
+        [new google.maps.LatLng(37.967819,-120.378364), 'Heel To Toe', map27, 'shopping-and-care'],
+        [new google.maps.LatLng(37.983606,-120.382427), 'Addictions Fashion', map28, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984287,-120.382843), 'Sonora Fly Company', map29, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984753,-120.382528), 'Wildbud Co', map30, 'shopping-and-care'],
+        [new google.maps.LatLng(37.985051,-120.383299), 'Antiques Etcetera', map31, 'shopping-and-care'],
+        [new google.maps.LatLng(37.983176,-120.38208), 'Aloft Art Gallery', map32, 'shopping-and-care'],
+        [new google.maps.LatLng(37.983176,-120.38208), 'Sonora Deluxe Barbershop', map33, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984443,-120.382922), 'La ti Da Salon', map34, 'shopping-and-care'],
+        [new google.maps.LatLng(37.981308,-120.381808), 'D&D Nails', map35, 'shopping-and-care'],
+        [new google.maps.LatLng(38.238252,-120.362872), 'Sierra Nevada Adventure Company', map36, 'shopping-and-care'],
+        [new google.maps.LatLng(37.985103,-120.382753), 'Amala Detox', map37, 'shopping-and-care']
       
         
     ];
@@ -488,12 +488,29 @@ var map1 =
     for (var i = 0; i < locations.length; i++) {
 
         // Append a link to the markers DIV for each marker
-        $('#markers').append('<a class="marker-link" data-markerid="' + i + '" href="#map">' + locations[i][1] + '</a> ');
+
+        $('.markers').each(function( index ) {
+            if($(this).attr('data-location-type') == locations[i][3]) {
+                $(this).append('<a class="marker-link" data-markerid="' + i + '" href="#map">' + (i + 1) + ". " + locations[i][1] + '</a> ');
+            }
+        });
+
+        var mapIcon = {
+            path: google.maps.SymbolPath.CIRCLE,
+            fillOpacity: 1,
+            fillColor: '#FDF5E6',
+            strokeOpacity: 1,
+            strokeWeight: 2,
+            strokeColor: '#274D44',
+            scale: 12
+        };
 
         var marker = new google.maps.Marker({
             position: locations[i][0],
             map: map,
             title: locations[i][1],
+            icon: mapIcon,
+            label: {color: '#274D44', fontSize: '12px', fontWeight: '600', text: (i+1).toString()}
         });
 
         // Register a click event listener on the marker to display the corresponding infowindow content
