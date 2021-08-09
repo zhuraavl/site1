@@ -39,10 +39,16 @@
     -webkit-animation-name: wobble;
     animation-name: wobble;
     .hover-line {
-      fill: #FDF5E6;
+      fill: #274D44;
       opacity: 1;
     }
   }
+}
+.home .check:hover {
+  .hover-line {
+      fill: #FDF5E6;
+      opacity: 1;
+    }
 }
 .logo {
   position: absolute;

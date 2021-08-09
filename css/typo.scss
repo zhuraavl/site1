@@ -92,10 +92,18 @@ h3 {
   }
 }
 
-h4 {font-size: 1.563vw;}
+h4 {
+  font-size: 1.563vw;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.75vw;
+  }
+}
 
 h5 {
   font-size: 1.25vw;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.45vw;
+  }
   @include media-breakpoint-down(xs) {
     font-size: 15px;
   }
@@ -103,17 +111,24 @@ h5 {
 
 small, .small {
   font-size: .9vw;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.25vw;
+  }
   @include media-breakpoint-down(xs) {
     font-size: 13px !important;
   }
 }
 .smalls {
   font-size: .86vw;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.2vw;
+  }
   @include media-breakpoint-down(xs) {
     font-size: 13px;
   }
 }
 .mobil-small {
+  
   @include media-breakpoint-down(xs) {
     font-size: 13px !important;
   }
@@ -136,6 +151,9 @@ a {
 p, input, li {
   font-size: 1.21vw;
   line-height: 1.3;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.45vw !important;
+  }
   @include media-breakpoint-down(xs) {
     font-size: 16px !important;
   }
@@ -160,6 +178,9 @@ button {
   font-size: 1.2vw;
   text-transform: uppercase;
   position: relative;
+  @include media-breakpoint-down(lg) {
+    font-size: 1.35vw;
+  }
   @include media-breakpoint-down(xs) {
     font-size: 15px;
   }

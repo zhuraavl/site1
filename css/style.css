@@ -6260,19 +6260,30 @@ h3 {
       font-size: 23px; } }
 h4 {
   font-size: 1.563vw; }
-
+  @media (max-width: 1199.98px) {
+    h4 {
+      font-size: 1.75vw; } }
 h5 {
   font-size: 1.25vw; }
+  @media (max-width: 1199.98px) {
+    h5 {
+      font-size: 1.45vw; } }
   @media (max-width: 575.98px) {
     h5 {
       font-size: 15px; } }
 small, .small {
   font-size: .9vw; }
+  @media (max-width: 1199.98px) {
+    small, .small {
+      font-size: 1.25vw; } }
   @media (max-width: 575.98px) {
     small, .small {
       font-size: 13px !important; } }
 .smalls {
   font-size: .86vw; }
+  @media (max-width: 1199.98px) {
+    .smalls {
+      font-size: 1.2vw; } }
   @media (max-width: 575.98px) {
     .smalls {
       font-size: 13px; } }
@@ -6293,6 +6304,9 @@ a {
 p, input, li {
   font-size: 1.21vw;
   line-height: 1.3; }
+  @media (max-width: 1199.98px) {
+    p, input, li {
+      font-size: 1.45vw !important; } }
   @media (max-width: 575.98px) {
     p, input, li {
       font-size: 16px !important; } }
@@ -6311,6 +6325,9 @@ button {
   font-size: 1.2vw;
   text-transform: uppercase;
   position: relative; }
+  @media (max-width: 1199.98px) {
+    .link {
+      font-size: 1.35vw; } }
   @media (max-width: 575.98px) {
     .link {
       font-size: 15px; } }
@@ -6483,19 +6500,16 @@ main {
   height: 100%;
   top: 100%;
   left: 0;
-  z-index: 10;
+  z-index: 10; }
+
+.hero-item {
+  position: absolute;
   will-change: transform;
   transition: all cubic-bezier(0.77, 0, 0.18, 1);
   -webkit-animation-name: autoscroll;
   animation-name: autoscroll;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-duration: 40s; }
-
-.hero-item {
-  position: absolute; }
+  animation-timing-function: linear; }
 
 .i-one-one {
   left: 10vw;
@@ -6503,144 +6517,86 @@ main {
 
 .i-one-two {
   right: 10vw;
-  width: 30vw;
-  top: 20vh; }
+  width: 30vw; }
 
 .i-one-three {
   right: 5vw;
-  width: 70vw;
-  top: 95vh; }
-  @media (max-width: 575.98px) {
-    .i-one-three {
-      top: 45vh; } }
+  width: 70vw; }
+
 .i-one-four {
   left: 10vw;
-  width: 30vw;
-  top: 155vh; }
-  @media (max-width: 575.98px) {
-    .i-one-four {
-      top: 75vh; } }
+  width: 30vw; }
+
 .i-one-five {
   right: 10vw;
-  width: 20vw;
-  top: 165vh; }
-  @media (max-width: 575.98px) {
-    .i-one-five {
-      top: 85vh; } }
+  width: 20vw; }
+
 .i-two-one {
   left: 5vw;
-  width: 30vw;
-  top: 200vh; }
-  @media (max-width: 575.98px) {
-    .i-two-one {
-      top: 105vh; } }
+  width: 30vw; }
+
 .i-two-two {
   right: 20vw;
-  width: 30vw;
-  top: 220vh; }
-  @media (max-width: 575.98px) {
-    .i-two-two {
-      top: 115vh; } }
+  width: 30vw; }
+
 .i-two-three {
   right: 5vw;
-  width: 50vw;
-  top: 285vh; }
-  @media (max-width: 575.98px) {
-    .i-two-three {
-      top: 140vh; } }
+  width: 50vw; }
+
 .i-two-four {
   left: 5vw;
-  width: 30vw;
-  top: 305vh; }
-  @media (max-width: 575.98px) {
-    .i-two-four {
-      top: 150vh; } }
+  width: 30vw; }
+
 .i-two-five {
-  left: 15vw;
-  width: 20vw;
-  top: 365vh; }
-  @media (max-width: 575.98px) {
-    .i-two-five {
-      top: 175vh; } }
+  right: 15vw;
+  width: 20vw; }
+
 .i-three-one {
   left: 5vw;
-  width: 40vw;
-  top: 420vh; }
-  @media (max-width: 575.98px) {
-    .i-three-one {
-      top: 190vh; } }
+  width: 40vw; }
+
 .i-three-two {
   right: 10vw;
-  width: 30vw;
-  top: 375vh; }
-  @media (max-width: 575.98px) {
-    .i-three-two {
-      top: 180vh; } }
+  width: 30vw; }
+
 .i-three-three {
   left: 10vw;
-  width: 30vw;
-  top: 605vh; }
-  @media (max-width: 575.98px) {
-    .i-three-three {
-      top: 240vh; } }
+  width: 30vw; }
+
 .i-three-four {
-  left: 10vw;
-  width: 35vw;
-  top: 545vh; }
-  @media (max-width: 575.98px) {
-    .i-three-four {
-      top: 230vh;
-      right: 15vw;
-      left: auto; } }
+  right: 10vw;
+  width: 35vw; }
+
 .i-three-five {
   right: 25vw;
-  width: 20vw;
-  top: 465vh; }
-  @media (max-width: 575.98px) {
-    .i-three-five {
-      top: 260vh; } }
+  width: 20vw; }
+
 .i-four-one {
   right: 15vw;
-  width: 30vw;
-  top: 535vh; }
-  @media (max-width: 575.98px) {
-    .i-four-one {
-      top: 290vh; } }
+  width: 30vw; }
+
 .i-four-two {
-  left: 50vw;
-  width: 20vw;
-  top: 585vh; }
-  @media (max-width: 575.98px) {
-    .i-four-two {
-      top: 280vh;
-      left: 10vw; } }
+  left: 5vw;
+  width: 20vw; }
+
 .i-four-three {
-  right: 15vw;
-  width: 30vw;
-  top: 625vh; }
-  @media (max-width: 575.98px) {
-    .i-four-three {
-      top: 300vh; } }
+  right: 10vw;
+  width: 40vw; }
+
 .i-four-four {
   left: 10vw;
-  width: 50vw;
-  top: 705vh; }
-  @media (max-width: 575.98px) {
-    .i-four-four {
-      top: 320vh; } }
+  width: 50vw; }
+
 .i-four-five {
   right: 10vw;
-  width: 20vw;
-  top: 685vh; }
-  @media (max-width: 575.98px) {
-    .i-four-five {
-      top: 350vh; } }
+  width: 20vw; }
+
 @-webkit-keyframes autoscroll {
   0% {
     transform: translateY(0);
     opacity: 1; }
   100% {
-    transform: translateY(-1000%);
+    transform: translateY(-300vh);
     @media (max-width: 575.98px) {
       transform: translateY(-100%); } } }
 
@@ -6649,7 +6605,7 @@ main {
     transform: translateY(0);
     opacity: 1; }
   100% {
-    transform: translateY(-1000%);
+    transform: translateY(-300vh);
     @media (max-width: 575.98px) {
       transform: translateY(-100%); } } }
 
@@ -6915,10 +6871,12 @@ section.explore .container {
     opacity: 1 !important; }
 
 .room-hero-text-box::-webkit-scrollbar {
-  width: 3px !important; }
+  width: 10px !important; }
 
 .room-hero-text-box::-webkit-scrollbar-thumb {
-  background-color: #274D44 !important; }
+  background-color: #274D44 !important;
+  border: 3px solid #FDF5E6 !important;
+  border-radius: 15px !important; }
 
 .rooms-hero {
   width: 32vw;
@@ -7156,10 +7114,18 @@ section.explore .container {
     overflow-x: hidden; }
 
 .gm-style-iw-d::-webkit-scrollbar {
-  width: 1px !important; }
+  width: 10px !important; }
+
+.gm-style-iw-d::-webkit-scrollbar-track {
+  background: #FDF5E6; }
+
+.gm-style .gm-style-iw-c {
+  background: #FDF5E6; }
 
 .gm-style-iw-d::-webkit-scrollbar-thumb {
-  background-color: #274D44 !important; }
+  background-color: #274D44 !important;
+  border: 3px solid #FDF5E6 !important;
+  border-radius: 15px !important; }
 
 .marker-box {
   width: 22vw;
@@ -7848,8 +7814,12 @@ footer .slick-prev {
     -webkit-animation-name: wobble;
     animation-name: wobble; }
     .check:hover .hover-line {
-      fill: #FDF5E6;
+      fill: #274D44;
       opacity: 1; }
+
+.home .check:hover .hover-line {
+  fill: #FDF5E6;
+  opacity: 1; }
 
 .logo {
   position: absolute;
