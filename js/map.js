@@ -447,23 +447,23 @@ var map1 =
         [new google.maps.LatLng(37.984402,-120.382438 ), 'Revive Café', map20, 'food-and-drinks'],
         [new google.maps.LatLng(37.983825,-120.382517 ), 'Yoshoku Ramen', map21, 'food-and-drinks'],
         [new google.maps.LatLng(37.983912,-120.382573 ), 'Formosa Boba Tea Bar', map22, 'food-and-drinks'],
-        [new google.maps.LatLng(37.984228,-120.382123 ), 'Zane’s Iron Horse Lounge', map22, 'food-and-drinks'],
-        [new google.maps.LatLng(38.011781,-120.320037 ), 'Indigeny Reserve', map23, 'food-and-drinks'],
+        [new google.maps.LatLng(37.984228,-120.382123 ), 'Zane’s Iron Horse Lounge', map23, 'food-and-drinks'],
+        [new google.maps.LatLng(38.011781,-120.320037 ), 'Indigeny Reserve', map24, 'food-and-drinks'],
       
       
         //Shopping and Care
         
-        [new google.maps.LatLng(37.984682,-120.383075  ), 'Candy Vault', map24, 'shopping-and-care'],
-        [new google.maps.LatLng(37.984515,-120.382506 ), 'Rustic Roses', map25, 'shopping-and-care'],
-        [new google.maps.LatLng(37.983176,-120.38208), 'Aloft Art Gallery', map26], 'shopping-and-care',
-        [new google.maps.LatLng(37.967819,-120.378364), 'Heel To Toe', map27, 'shopping-and-care'],
-        [new google.maps.LatLng(37.983606,-120.382427), 'Addictions Fashion', map28, 'shopping-and-care'],
-        [new google.maps.LatLng(37.984287,-120.382843), 'Sonora Fly Company', map29, 'shopping-and-care'],
-        [new google.maps.LatLng(37.984753,-120.382528), 'Wildbud Co', map30, 'shopping-and-care'],
-        [new google.maps.LatLng(37.985051,-120.383299), 'Antiques Etcetera', map31, 'shopping-and-care'],
-        [new google.maps.LatLng(37.983176,-120.38208), 'Aloft Art Gallery', map32, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984682,-120.383075  ), 'Candy Vault', map25, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984515,-120.382506 ), 'Rustic Roses', map26, 'shopping-and-care'],
+        [new google.maps.LatLng(37.985051,-120.383299), 'Aloft Art Gallery', map27, 'shopping-and-care'],
+        [new google.maps.LatLng(37.967819,-120.378364), 'Heel To Toe', map28, 'shopping-and-care'],
+        [new google.maps.LatLng(37.983606,-120.382427), 'Addictions Fashion', map29, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984287,-120.382843), 'Sonora Fly Company', map30, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984645,-120.382696), 'Wildbud Co', map31, 'shopping-and-care'],
+        [new google.maps.LatLng(37.984753,-120.382528), 'Antiques Etcetera', map32, 'shopping-and-care'],
+        
         [new google.maps.LatLng(37.983176,-120.38208), 'Sonora Deluxe Barbershop', map33, 'shopping-and-care'],
-        [new google.maps.LatLng(37.984443,-120.382922), 'La ti Da Salon', map34, 'shopping-and-care'],
+        [new google.maps.LatLng(37.983605,-120.381403), 'La ti Da Salon', map34, 'shopping-and-care'],
         [new google.maps.LatLng(37.981308,-120.381808), 'D&D Nails', map35, 'shopping-and-care'],
         [new google.maps.LatLng(38.238252,-120.362872), 'Sierra Nevada Adventure Company', map36, 'shopping-and-care'],
         [new google.maps.LatLng(37.985103,-120.382753), 'Amala Detox', map37, 'shopping-and-care']
@@ -510,7 +510,7 @@ var map1 =
             map: map,
             title: locations[i][1],
             icon: mapIcon,
-            label: {color: '#274D44', fontSize: '12px', fontWeight: '600', text: (i+1).toString()}
+            label: {color: '#274D44', fontSize: '13px', fontWeight: '500', text: (i+1).toString()}
         });
 
         // Register a click event listener on the marker to display the corresponding infowindow content
