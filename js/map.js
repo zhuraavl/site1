@@ -414,7 +414,9 @@ var map1 =
     
     map36 = '<div class="marker-box"><h4>Sierra Nevada Adventure Company</h4><p>2293 CA-4, Arnold, CA 95223, United States</p><p>Offering brands like Patagonia, Keen, Chaco, and Kuhl.  They also offer a large collection of paddle boards, climbing gear, and trail books to enhance every hike!</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//2293+CA-4,+Arnold,+CA+95223/@38.2382469,-120.3978915,13z" target="_blank">Direction</a><a href="https://snacattack.com/" target="_blank">Website</a></div></div>',
     
-    map37 = '<div class="marker-box"><h4>Amala Detox</h4><p>31 S Washington St, Sonora, CA 95370, United States</p><p>Step in and wind down with an ionic foot soak and scrub.  As you begin to rejuvenate you can quench your thirst with a selection of teas that are sure to satisfy your taste buds and your soul.</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//31+S+Washington+St,+Sonora,+CA+95370/@37.9850975,-120.4177728,13z" target="_blank">Direction</a><a href="https://www.amaladetox.com/" target="_blank">Website</a></div></div>'
+    map37 = '<div class="marker-box"><h4>Amala Detox</h4><p>31 S Washington St, Sonora, CA 95370, United States</p><p>Step in and wind down with an ionic foot soak and scrub.  As you begin to rejuvenate you can quench your thirst with a selection of teas that are sure to satisfy your taste buds and your soul.</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//31+S+Washington+St,+Sonora,+CA+95370/@37.9850975,-120.4177728,13z" target="_blank">Direction</a><a href="https://www.amaladetox.com/" target="_blank">Website</a></div></div>',
+
+    map40 = '<div class="marker-box"><h4>Hotel Lumberjack</h4><p>128 S GREEN ST, SONORA, CA 95370, United States</p><p>text content</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//128+S+Green+St,+Sonora,+CA+95370/@37.9833882,-120.4183583,13z" target="_blank">Direction</a><a href="https://hotellumberjack.com" target="_blank">Website</a></div></div>'
     
     
 
@@ -422,6 +424,7 @@ var map1 =
     
 
     var locations = [
+        [new google.maps.LatLng(37.983393,-120.383339), 'Hotel Lumberjack', map40, 'attractions'],
         [new google.maps.LatLng(37.987698,-120.385005), 'Red Church', map1, 'attractions'],
         [new google.maps.LatLng(37.985157,-120.384217), 'Tuolumne County Superior Court', map2, 'attractions'],
         [new google.maps.LatLng(37.985589,-120.383226), 'Tuolumne County Veterans Hall and Museum', map3, 'attractions'],
