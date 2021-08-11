@@ -6912,16 +6912,18 @@ section.explore .container {
   .rooms-hero ul {
     padding: 0;
     margin: 0;
-    line-height: 1.3; }
+    line-height: 1.3;
+    columns: 2;
+    list-style: none; }
     @media (max-width: 575.98px) {
       .rooms-hero ul {
         display: none;
         padding-top: 20px;
         padding-bottom: 20px; } }
     .rooms-hero ul li {
-      width: 49%;
-      display: inline-block;
-      margin-bottom: 0vh; }
+      margin-bottom: 1.5vh;
+      page-break-inside: avoid;
+      break-inside: avoid-column; }
 
 .amenities-button {
   text-transform: uppercase;

@@ -416,7 +416,7 @@ var map1 =
     
     map37 = '<div class="marker-box"><h4>Amala Detox</h4><p>31 S Washington St, Sonora, CA 95370, United States</p><p>Step in and wind down with an ionic foot soak and scrub.  As you begin to rejuvenate you can quench your thirst with a selection of teas that are sure to satisfy your taste buds and your soul.</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//31+S+Washington+St,+Sonora,+CA+95370/@37.9850975,-120.4177728,13z" target="_blank">Direction</a><a href="https://www.amaladetox.com/" target="_blank">Website</a></div></div>',
 
-    map40 = '<div class="marker-box"><h4>Hotel Lumberjack</h4><p>128 S GREEN ST, SONORA, CA 95370, United States</p><p>text content</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//128+S+Green+St,+Sonora,+CA+95370/@37.9833882,-120.4183583,13z" target="_blank">Direction</a><a href="https://hotellumberjack.com" target="_blank">Website</a></div></div>'
+    map40 = '<div class="marker-box"><h4>Hotel Lumberjack</h4><p>128 S GREEN ST, SONORA, CA 95370, United States</p><p>Hotel Lumberjack is proudly located at the center of historic Sonora, California. Our hotel is a newly envisaged Americana Motel experience. We’re in the heart of the Gold Country, close to curated boutiques and fantastic dining.</p><div class="buttons-row"><a href="https://www.google.com/maps/dir//128+S+Green+St,+Sonora,+CA+95370/@37.9833882,-120.4183583,13z" target="_blank">Direction</a><a href="https://hotellumberjack.com" target="_blank">Website</a></div></div>'
     
     
 
