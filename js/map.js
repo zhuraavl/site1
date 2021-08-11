@@ -424,7 +424,6 @@ var map1 =
     
 
     var locations = [
-        [new google.maps.LatLng(37.983393,-120.383339), 'Hotel Lumberjack', map40, 'attractions'],
         [new google.maps.LatLng(37.987698,-120.385005), 'Red Church', map1, 'attractions'],
         [new google.maps.LatLng(37.985157,-120.384217), 'Tuolumne County Superior Court', map2, 'attractions'],
         [new google.maps.LatLng(37.985589,-120.383226), 'Tuolumne County Veterans Hall and Museum', map3, 'attractions'],
@@ -474,6 +473,10 @@ var map1 =
         
     ];
   
+   
+    var locationsSecond = [
+        [new google.maps.LatLng(37.988,-120.385005), 'Hotel Lumberjack', map40],
+    ];
   
   
 //    var locationstwo = [
@@ -517,8 +520,35 @@ var map1 =
         });
 
         // Register a click event listener on the marker to display the corresponding infowindow content
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+       
+        registerClick(marker, locations, map, i);
 
+        // Add marker to markers array
+        markers.push(marker);
+    }
+  
+    for (var i = 0; i < locationsSecond.length; i++) {
+
+        var markerIcon2 = {
+            url: "media/lumbermarker.svg",
+            scaledSize: new google.maps.Size(30, 30),
+        };
+
+        var marker2 = new google.maps.Marker({
+            position: locationsSecond[i][0],
+            map: map,
+            title: locationsSecond[i][1],
+            icon: markerIcon2,
+        });
+
+        registerClick(marker2, locationsSecond, map, i);
+
+        markers.push(marker2);
+
+    }
+
+    function registerClick(marker, locations, map, i){
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
             return function () {
                 infowindow.setContent(locations[i][2]);
                 infowindow.open(map, marker);
@@ -529,10 +559,6 @@ var map1 =
 
         })(marker, i));
 
-        
-
-        // Add marker to markers array
-        markers.push(marker);
     }
   
   
