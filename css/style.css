@@ -6921,7 +6921,7 @@ section.explore .container {
         padding-top: 20px;
         padding-bottom: 20px; } }
     .rooms-hero ul li {
-      margin-bottom: 1.5vh;
+      padding-bottom: 1.5vh;
       page-break-inside: avoid;
       break-inside: avoid-column; }
 
@@ -7642,6 +7642,13 @@ section.explore .container {
     color: #FDF5E6 !important; }
   .not-found-page header .check svg path {
     fill: #FDF5E6 !important; }
+
+.mirai-engine {
+  position: absolute;
+  top: auto;
+  bottom: 50px;
+  left: 0;
+  right: 0; }
 
 footer {
   background: #274D44;

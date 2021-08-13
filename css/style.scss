@@ -1014,7 +1014,7 @@ section.explore {
       padding-bottom: 20px;
     }
     li {
-      margin-bottom: 1.5vh;
+      padding-bottom: 1.5vh;
       page-break-inside:avoid;
       break-inside:avoid-column;
     }
@@ -1936,7 +1936,13 @@ section.explore {
 
 
 
-
+.mirai-engine {
+  position: absolute;
+  top: auto;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
 
 
 
