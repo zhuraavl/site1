@@ -16,12 +16,14 @@ jQuery(document).ready(function ($) {
        
     if ($this.scrollTop() > $height - 50 ) {
        $head.addClass('change-color');
+       $('.topbar-opening').css('height','0');
        
     } else if ($this.scrollTop() > $pageheight - $height) {
       $head.removeClass('change-color');
       
     } else {
        $head.removeClass('change-color');
+       $('.topbar-opening').css('height','25');
     };
 });
 }
@@ -34,12 +36,15 @@ else {
        
     if ($this.scrollTop() > $height - 50 && $this.scrollTop() < $pageheight - 1000 ) {
        $head.addClass('change-color');
+       $('.topbar-opening').css('height','0');
        
     } else if ($this.scrollTop() > $pageheight - $height) {
       $head.removeClass('change-color');
+     
       
     } else {
        $head.removeClass('change-color');
+      $('.topbar-opening').css('height','25');
     };
 });
 }

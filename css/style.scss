@@ -142,217 +142,52 @@ main {
 }
 
 
-//.i-one-one {
-//  
-//  left: 10vw;
-//  width: 30vw;
-//}
-//.i-one-two {
-//  
-//  right: 10vw;
-//  width: 30vw;
-//  top: 20vh;
-//}
-//.i-one-three {
-//  right: 5vw;
-//  width: 70vw;
-//  top: 95vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 45vh;
-//  }
-//}
-//.i-one-four {
-//  left: 10vw;
-//  width: 30vw;
-//  top: 155vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 75vh;
-//  }
-//}
-//
-//.i-one-five {
-//  right: 10vw;
-//  width: 20vw;
-//  top: 165vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 85vh;
-//  }
-//}
-//
-//.i-two-one {
-//  left: 5vw;
-//  width: 30vw;
-//  top: 200vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 105vh;
-//  }
-//}
-//.i-two-two {
-//  right: 20vw;
-//  width: 30vw;
-//  top: 220vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 115vh;
-//  }
-//}
-//
-//.i-two-three {
-//  right: 5vw;
-//  width: 50vw;
-//  top: 285vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 140vh;
-//  }
-//}
-//.i-two-four {
-//  left: 5vw;
-//  width: 30vw;
-//  top: 305vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 150vh;
-//  }
-//}
-//
-//.i-two-five {
-//  left: 15vw;
-//  width: 20vw;
-//  top: 365vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 175vh;
-//  }
-//}
-//
-//
-//
-//
-//.i-three-one {
-//  left: 5vw;
-//  width: 40vw;
-//  top: 420vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 190vh;
-//  }
-//}
-//.i-three-two {
-//  right: 10vw;
-//  width: 30vw;
-//  top: 375vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 180vh;
-//  }
-//}
-//
-//.i-three-three {
-//  left: 10vw;
-//  width: 30vw;
-//  top: 605vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 240vh;
-//  }
-//}
-//.i-three-four {
-//  left: 10vw;
-//  width: 35vw;
-//  top: 545vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 230vh;
-//    right: 15vw;
-//    left: auto;
-//  }
-//}
-//
-//.i-three-five {
-//  right: 25vw;
-//  width: 20vw;
-//  top: 465vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 260vh;
-//  }
-//}
-//
-//
-//
-//.i-four-one {
-//  
-//  right: 15vw;
-//  width: 30vw;
-//  top: 535vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 290vh;
-//  }
-//}
-//.i-four-two {
-//  left: 50vw;
-//  width: 20vw;
-//  top: 585vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 280vh;
-//    left: 10vw;
-//  }
-//}
-//
-//.i-four-three {
-//  right: 15vw;
-//  width: 30vw;
-//  top: 625vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 300vh;
-//  }
-//}
-//.i-four-four {
-//  left: 10vw;
-//  width: 50vw;
-//  top: 705vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 320vh;
-//  }
-//}
-//
-//.i-four-five {
-//  right: 10vw;
-//  width: 20vw;
-//  top: 685vh;
-//  @include media-breakpoint-down(xs) {
-//    top: 350vh;
-//  }
-//}
-
 
 
 .i-one-one {
-  
   left: 10vw;
   width: 30vw;
+  animation-duration: 10s;animation-delay: 2s;
+  @include media-breakpoint-down(xs) {
+    animation-duration: 11s;animation-delay: 1s;
+    width: 50vw;
+  }
 }
 .i-one-two {
-  
   right: 10vw;
   width: 30vw;
-
+  animation-duration: 9s; animation-delay: 4s;
+  @include media-breakpoint-down(xs) {
+    animation-duration: 10s;animation-delay: 3s;
+    width: 40vw;
+  }
 }
 .i-one-three {
   right: 5vw;
   width: 70vw;
-
+  animation-duration: 8s; animation-delay: 6s;
   @include media-breakpoint-down(xs) {
-   
+   animation-duration: 10s; animation-delay: 4s;
+    right: 15vw;
   }
 }
 .i-one-four {
   left: 10vw;
   width: 30vw;
-
+  animation-duration: 13s; animation-delay: 7s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 11s; animation-delay: 5s;
+    width: 50vw;
   }
 }
 
 .i-one-five {
   right: 10vw;
   width: 20vw;
-
+  animation-duration: 10s; animation-delay: 8s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 12s; animation-delay: 6s;
+    width: 60vw;
   }
 }
 
@@ -362,43 +197,50 @@ main {
 .i-two-one {
   left: 5vw;
   width: 30vw;
-
+  animation-duration: 13s; animation-delay: 9s;
   @include media-breakpoint-down(xs) {
-    
+    width: 50vw;
+    animation-duration: 13s; animation-delay: 7s;
   }
 }
 .i-two-two {
   right: 20vw;
   width: 30vw;
-
+  animation-duration: 11s;animation-delay: 9s;
   @include media-breakpoint-down(xs) {
-   
+    animation-duration: 11s; animation-delay: 10s;
+    width: 40vw;
+    right: 5vw;
   }
 }
 
 .i-two-three {
   right: 5vw;
   width: 50vw;
-
+  animation-duration: 10s;animation-delay: 11s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 13s; animation-delay: 11s;
+    right: 25vw;
   }
 }
 .i-two-four {
   left: 5vw;
   width: 30vw;
-
+  animation-duration: 14s;animation-delay: 13s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 14s;animation-delay: 13s;
+    width: 40vw;
   }
 }
 
 .i-two-five {
   right: 15vw;
   width: 20vw;
-
+  animation-duration: 12s;animation-delay: 14s;
   @include media-breakpoint-down(xs) {
-   
+    animation-duration: 13s;animation-delay: 14s;
+    width: 40vw;
+    right: 5vw;
   }
 }
 
@@ -409,41 +251,47 @@ main {
 .i-three-one {
   left: 5vw;
   width: 40vw;
-
+  animation-duration: 11s;animation-delay: 16s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 12s;animation-delay: 16s;
   }
 }
 .i-three-two {
   right: 10vw;
   width: 30vw;
-
+  animation-duration: 9s;animation-delay: 17s;
   @include media-breakpoint-down(xs) {
-   
+   animation-duration: 10s;animation-delay: 18.5s;
+    width: 50vw;
   }
 }
 .i-three-three {
   left: 10vw;
   width: 30vw;
-
+  animation-duration: 12s;animation-delay: 20s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 11s;animation-delay: 20s;
+    width: 50vw;;
   }
 }
 .i-three-four {
   right: 10vw;
   width: 35vw;
-
+  animation-duration: 9s;animation-delay: 20s;
   @include media-breakpoint-down(xs) {
-    
+    animation-duration: 10s;animation-delay: 22.5s;
+    width: 55vw;
   }
 }
 .i-three-five {
   right: 25vw;
   width: 20vw;
-
+  animation-duration: 9s;animation-delay: 23s;
   @include media-breakpoint-down(xs) {
-
+    animation-duration: 10s;animation-delay: 24s;
+    width: 40vw;
+    right: 0;
+    left: 5vw;
   }
 }
 
@@ -455,33 +303,48 @@ main {
 .i-four-one {
   right: 15vw;
   width: 30vw;
+  animation-duration: 10s;animation-delay: 25s;
   @include media-breakpoint-down(xs) {
+    width: 50vw;
+    animation-duration: 11s;animation-delay: 25.5s;
   }
 }
 .i-four-two {
   left: 5vw;
   width: 20vw;
+  animation-duration: 12s;animation-delay: 26s;
   @include media-breakpoint-down(xs) {
+    width: 40vw;
+    animation-duration: 12s;animation-delay: 26.5s;
   }
 }
 
 .i-four-three {
   right: 10vw;
   width: 40vw;
+  animation-duration: 9s;animation-delay: 27s;
   @include media-breakpoint-down(xs) {
+    animation-duration: 11s;animation-delay: 28s;
+    width: 60vw;
   }
 }
 .i-four-four {
   left: 10vw;
   width: 50vw;
+  animation-duration: 10s;animation-delay: 29s;
   @include media-breakpoint-down(xs) {
+    animation-duration: 12s;animation-delay: 30s;
+    width: 70vw;
   }
 }
 
 .i-four-five {
   right: 10vw;
   width: 20vw;
+  animation-duration: 11s;animation-delay: 29s;
   @include media-breakpoint-down(xs) {
+    animation-duration: 13s;animation-delay: 31s;
+    width: 50vw;
   }
 }
 
@@ -1944,6 +1807,14 @@ section.explore {
   right: 0;
 }
 
+
+.topbar-opening p {font-size:12px;}
+#header {
+    margin-top: 20px;
+}
+#header.change-color {
+    margin-top: 0;
+}
 
 
 
