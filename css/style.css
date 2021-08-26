@@ -7776,10 +7776,10 @@ section.explore .container {
 .topbar-opening p {
   font-size: 12px; }
 
-#header {
+.home #header {
   margin-top: 20px; }
 
-#header.change-color {
+.home #header.change-color {
   margin-top: 0; }
 
 footer {
@@ -8047,11 +8047,15 @@ header.change-color-footer .check svg path {
     padding: 0;
     margin: 0;
     list-style: none; }
+    .off-menu ul li {
+      font-size: 1.8vw;
+      padding-bottom: 2.4vh; }
+      @media (max-width: 575.98px) {
+        .off-menu ul li {
+          font-size: 23px; } }
     .off-menu ul a {
       text-transform: uppercase;
       font-size: 1.8vw;
-      padding-bottom: 2.4vh;
-      display: block;
       line-height: 1; }
       @media (max-width: 575.98px) {
         .off-menu ul a {
