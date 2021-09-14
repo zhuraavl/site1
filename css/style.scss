@@ -800,6 +800,9 @@ section.explore {
       transition: all .3s;
     }
   }
+  hr {
+    
+  }
   .box:hover {
     > .bg {
       opacity: 1;
@@ -813,6 +816,10 @@ section.explore {
         opacity: 1 !important;
       }
   }
+}
+
+.feature-title {
+ 
 }
 
 
@@ -1316,7 +1323,7 @@ section.explore {
     }
   }
   .slick-arrow {
-    top: -2.5vw;
+    top: -3.3vw;
     @include media-breakpoint-down(xs) {
       bottom: -60px;
       top: auto;
